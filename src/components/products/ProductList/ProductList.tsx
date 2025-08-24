@@ -7,16 +7,14 @@ interface ProductListProps {
 
 export const ProductList = ({ products }: ProductListProps) => {
     return (
-        <div className="container mx-auto px-4 py-8">
-            <h1 className="text-3xl font-bold mb-8">Productos</h1>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+        <div className="w-full py-[20px] px-4">
+            <div className="grid grid-cols-3 grid-rows-1 gap-[60px] max-w-[1200px] mx-auto">
                 {products.map((product: Product) => (
-                    <div key={product.id} className="border rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow">
+                    <div key={product.id} className="text-center">
                         <ProductCard product={product} />
                     </div>
                 ))}
             </div>
         </div>
-    )
-}
+    );
+};
