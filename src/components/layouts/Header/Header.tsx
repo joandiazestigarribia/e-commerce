@@ -1,8 +1,16 @@
 import { Link } from 'react-router-dom';
+import { useAppSelector, useAppDispatch } from '@/hooks';
+import { toggleCart } from '@/store/slices/cartSlice';
 
 export const Header = () => {
+    const { itemCount } = useAppSelector(state => state.cart);
+    const dispatch = useAppDispatch();
+    const handleToggleCart = () => {
+        dispatch(toggleCart());
+    }
+
     return (
-        <header className="bg-white border-b border-gray-200">
+        <header className="bg-white border-b border-gray-200 fixed w-full z-[998]">
             <div className="w-[90%] mx-auto py-[15px]">
                 <div className="flex justify-between items-center h-[35px] text-[11px]">
                     <nav className="flex items-center">
@@ -49,11 +57,19 @@ export const Header = () => {
                         <Link to="/blog" className="text-gray-600 hover:text-gray-900 font-medium tracking-wide mr-[15px]">
                             BLOG
                         </Link>
-                        <Link to="/cart" className="text-gray-600 hover:text-gray-900">
+                        <button
+                            onClick={handleToggleCart}
+                            className="text-gray-600 hover:text-gray-900 relative"
+                        >
                             <svg className="w-[14px] h-[14px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                             </svg>
-                        </Link>
+                            {itemCount > 0 && (
+                                <span className="absolute -top-2 -right-2 bg-red-500 text-white text-[8px] rounded-full w-4 h-4 flex items-center justify-center">
+                                    {itemCount}
+                                </span>
+                            )}
+                        </button>
                     </nav>
                 </div>
             </div>

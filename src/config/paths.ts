@@ -2,5 +2,8 @@
 export const paths = {
     home: {
         path: '/'
+    },
+    product: {
+        path: '/p/:slug'
     }
 }

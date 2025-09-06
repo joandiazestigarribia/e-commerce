@@ -56,3 +56,36 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+@layer components {
+  .btn-primary {
+    background-color: #fff;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+    width: 70%;
+    padding: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 0;
+    font-weight: 400;
+  }
+  
+  .btn-primary:hover {
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+  }
+
+  .btn-primary-text {
+    font-size: .75rem;
+    color: #000;
+    letter-spacing: .03125rem;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary:hover .btn-primary-text {
+    color: #fff;
+  }
+}

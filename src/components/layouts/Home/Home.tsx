@@ -1,5 +1,5 @@
 import { ProductList } from '@/components/products/ProductList';
-import { useProducts } from '@/hooks/useProducts';
+import { useProducts } from '@/hooks';
 import { Link } from 'react-router-dom';
 
 export const Home = () => {
