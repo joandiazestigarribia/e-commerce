@@ -1,11 +1,8 @@
-import { render, screen } from '@/testing/test-utils'
 import { configureStore } from '@reduxjs/toolkit'
-import { Provider } from 'react-redux'
-import { addToCart, toggleCart } from '../cartSlice'
+import { addToCart, removeFromCart, toggleCart, updateQuantity } from '../cartSlice'
 import cartReducer from '../cartSlice'
 import { createProduct } from '@/testing/data-generators'
-import { describe, expect, test, vi, beforeEach } from 'vitest'
-import { CartModal } from '@/components/ui'
+import { describe, expect, test } from 'vitest'
 
 // Definir el tipo del estado del store de test
 type TestStoreState = {
@@ -13,41 +10,62 @@ type TestStoreState = {
 }
 
 // Crear un store de test sin persistencia para evitar conflictos de tipos
-const createTestStore = () => configureStore<TestStoreState>({
+export const createTestStore = () => configureStore<TestStoreState>({
     reducer: {
         cart: cartReducer
     }
 })
 
-describe('Cart slice', () => {
-    let testStore: ReturnType<typeof createTestStore>
-
-    beforeEach(() => {
-        testStore = createTestStore()
-        vi.clearAllMocks()
+// Testing de la lógica del slice
+describe('cartSlice - Unit Tests', () => {
+    test('should add product to cart', () => {
+        const initialState = { items: [], total: 0, isOpen: false, itemCount: 0 }
+        const product = createProduct()
+        const action = addToCart(product)
+        const newState = cartReducer(initialState, action)
+        
+        expect(newState.items).toHaveLength(1)
+        expect(newState.total).toBe(product.price)
     })
 
-    test('agrega productos al carrito correctamente', () => {
-        const mockProduct = createProduct()
-        testStore.dispatch(addToCart(mockProduct))
-        const state = testStore.getState()
-        expect(state.cart.items).toHaveLength(1)
-        expect(state.cart.items[0].title).toBe(mockProduct.title)
-        expect(state.cart.total).toBe(mockProduct.price)
+    test('should update quantity correctly', () => {
+        const initialState = { items: [], total: 0, isOpen: false, itemCount: 0 }
+        const product = createProduct()
+        
+        // Primero agregar el producto al carrito
+        const addAction = addToCart(product)
+        const stateWithProduct = cartReducer(initialState, addAction)
+        
+        // Luego actualizar la cantidad
+        const updateAction = updateQuantity({ id: product.id, quantity: 2 })
+        const newState = cartReducer(stateWithProduct, updateAction)
+        
+        expect(newState.items).toHaveLength(1)
+        expect(newState.items[0].quantity).toBe(2)
+        expect(newState.total).toBe(product.price * 2)
     })
-
-    test('muestra productos en el CartModal', () => {
-        const mockProduct = createProduct()
-        testStore.dispatch(addToCart(mockProduct))
-        testStore.dispatch(toggleCart())
+    
+    test('should remove product from cart', () => {
+        const initialState = { items: [], total: 0, isOpen: false, itemCount: 0 }
+        const product = createProduct()
         
-        // Envolver el CartModal con el Provider del testStore
-        render(
-            <Provider store={testStore}>
-                <CartModal />
-            </Provider>
-        )
+        // Primero agregar el producto
+        const addAction = addToCart(product)
+        const stateWithProduct = cartReducer(initialState, addAction)
         
-        expect(screen.getByText(mockProduct.title)).toBeInTheDocument()
+        // Luego removerlo
+        const removeAction = removeFromCart(product.id)
+        const newState = cartReducer(stateWithProduct, removeAction)
+        
+        expect(newState.items).toHaveLength(0)
+        expect(newState.total).toBe(0)
+    })
+    
+    test('should toggle cart open/close state', () => {
+        const initialState = { items: [], total: 0, isOpen: false, itemCount: 0 }
+        const action = toggleCart()
+        const newState = cartReducer(initialState, action)
+        
+        expect(newState.isOpen).toBe(true)
     })
 })

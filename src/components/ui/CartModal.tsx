@@ -80,6 +80,7 @@ export const CartModal = () => {
                                                     onClick={() => handleUpdateQuantity(item.id, item.quantity - 1)}
                                                     className="w-6 h-6 flex items-center justify-center border border-gray-300 rounded hover:bg-gray-100"
                                                     disabled={item.quantity <= 1}
+                                                    aria-label="Disminuir cantidad"
                                                 >
                                                     -
                                                 </button>
@@ -87,6 +88,7 @@ export const CartModal = () => {
                                                 <button
                                                     onClick={() => handleUpdateQuantity(item.id, item.quantity + 1)}
                                                     className="w-6 h-6 flex items-center justify-center border border-gray-300 rounded hover:bg-gray-100"
+                                                    aria-label="Aumentar cantidad"
                                                 >
                                                     +
                                                 </button>

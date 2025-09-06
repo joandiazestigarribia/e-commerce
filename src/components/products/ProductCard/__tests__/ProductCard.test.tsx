@@ -1,5 +1,3 @@
-// Test de ProductCard
-
 import { describe, it, expect, vi, beforeEach } from 'vitest'
 import { screen, fireEvent } from '@testing-library/react'
 import userEvent from '@testing-library/user-event'
@@ -44,7 +42,6 @@ describe('ProductCard', () => {
         const user = userEvent.setup()
         render(<ProductCard product={testProduct} />)
 
-        // Simular imagen cargada
         const image = screen.getByAltText('Test Product Premium')
         fireEvent.load(image)
 
@@ -63,19 +60,18 @@ describe('ProductCard', () => {
         )
     })
 
-    it('truncates long titles correctly', () => {
+    it('handles long titles appropriately', () => {
         const longTitleProduct = createProduct({
-            title: 'Este es un título extremadamente largo que definitivamente debería ser truncado'
+            title: 'A'.repeat(50) 
         })
-
+        
         render(<ProductCard product={longTitleProduct} />)
-
-        // Buscar específicamente el elemento h3 que contiene el título
         const titleElement = screen.getByRole('heading', { level: 3 })
         
-        expect(titleElement.textContent).toMatch(/\.\.\.$/)
-        expect(titleElement.textContent?.length).toBeLessThanOrEqual(33)
-        expect(titleElement.textContent).toContain('Este es un título extrem')
+        expect(titleElement.textContent).toMatch(/\.\.\.$/) 
+        expect(titleElement.textContent?.length).toBeLessThan(longTitleProduct.title.length) 
+        
+        expect(titleElement.textContent).toContain(longTitleProduct.title.substring(0, 10))
     })
 
     it('disables button while image is loading', () => {

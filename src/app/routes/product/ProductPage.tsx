@@ -1,9 +1,32 @@
-import { useParams } from "react-router-dom"
+import { LoaderFunctionArgs, useParams, useRouteError } from "react-router-dom"
 import { useProduct } from "@/hooks/useProduct";
 import { extractIdFromSlug } from "@/utils/createSlug";
 import { useState } from "react";
 import { addToCart } from "@/store/slices/cartSlice";
 import { useDispatch } from "react-redux";
+import { QueryClient } from "@tanstack/react-query";
+import { fetchProduct } from "@/lib/api-client";
+
+// TODO: Crear mensaje de error
+
+export const clientLoader = (qc: QueryClient) => async ({ params }: LoaderFunctionArgs) => {
+    const slug = params.slug as string;
+    const id = extractIdFromSlug(slug);
+    await qc.ensureQueryData({
+        queryKey: ['product', id],
+        queryFn: () => fetchProduct(id)
+    })
+    return null;
+}
+
+export const ProductErrorBoundary = () => {
+    const error = useRouteError() as any;
+    return (
+        <div className="flex justify-center items-center min-h-screen bg-white">
+            <div className="text-red-500 text-xl">Error: {error?.message || 'Error desconocido'}</div>
+        </div>
+    )
+}
 
 export const ProductPage = () => {
     const { slug } = useParams();

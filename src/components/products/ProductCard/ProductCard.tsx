@@ -14,7 +14,9 @@ export const ProductCard = ({ product }: ProductCardProps) => {
     const [imageLoaded, setImageLoaded] = useState(false);
     const [imageError, setImageError] = useState(false);
 
-    const handleAddToCart = () => {
+    const handleAddToCart = (e: React.MouseEvent<HTMLButtonElement>) => {
+        e.preventDefault();
+        e.stopPropagation();
         dispatch(addToCart(product));
     }
 

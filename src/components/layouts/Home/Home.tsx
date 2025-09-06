@@ -1,6 +1,30 @@
 import { ProductList } from '@/components/products/ProductList';
+import { fetchProducts } from '@/lib/api-client';
 import { useProducts } from '@/hooks';
-import { Link } from 'react-router-dom';
+import { QueryClient } from '@tanstack/react-query';
+import { Link, useRouteError } from 'react-router-dom';
+
+// TODO: Revisar
+// TODO: Crear mensaje de error
+
+export const clientLoader = (qc: QueryClient) => async () => {
+    await qc.ensureQueryData({
+        queryKey: ['products'],
+        queryFn: fetchProducts
+    })
+    return null;
+}
+
+export const HomeErrorBoundary = () => {
+    const error = useRouteError() as any;
+    return (
+        <div className="flex justify-center items-center min-h-screen bg-white">
+            <div className="text-red-500 text-xl">
+                Error cargando inicio: {error?.message || 'Error desconocido'}
+            </div>
+        </div>
+    )
+}
 
 export const Home = () => {
     const { products, loading, error } = useProducts();

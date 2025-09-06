@@ -1,29 +1,46 @@
-import { createBrowserRouter } from 'react-router-dom';
-import { paths } from '@/config/paths';
-import { Home } from '@/components/layouts/Home/Home';
 import { MainLayout } from '@/components/layouts/MainLayout';
-import { ProductPage } from './routes/product/ProductPage';
+import { paths } from '@/config/paths';
+import { QueryClient, useQueryClient } from '@tanstack/react-query';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { RootErrorBoundary } from './ErrorBoundary';
+import { useMemo } from 'react';
 
-// TODO: Agregar lazy loading cuando tenga pagina de autenticacion
 
-export const router = createBrowserRouter([
+const convertNamed = (queryClient: QueryClient, pick: (m: any) => any) => (m: any) => {
+    return {
+        loader: m.clientLoader?.(queryClient),
+        action: m.clientAction?.(queryClient),
+        Component: pick(m),
+        ErrorBoundary: m.ErrorBoundary ?? m.HomeErrorBoundary ?? m.ProductErrorBoundary,
+    };
+};
+
+export const createAppRouter = (queryClient: QueryClient) => createBrowserRouter([
     {
         path: "/",
         element: <MainLayout />,
+        ErrorBoundary: RootErrorBoundary,
         children: [
             {
                 index: true,
-                element: <Home />
-            },
-            {
-                path: paths.home.path,
-                element: <Home />
+                lazy: () =>
+                    import('@/components/layouts/Home/Home').then(
+                        convertNamed(queryClient, (m) => m.Home)
+                    )
             },
             {
                 path: paths.product.path,
-                element: <ProductPage />
+                lazy: () =>
+                    import('./routes/product/ProductPage').then(
+                        convertNamed(queryClient, (m) => m.ProductPage)
+                    )
             }
         ]
-    },
-]);
+    }
+])
 
+export const AppRouter = () => {
+    const queryClient = useQueryClient();
+    const router = useMemo(() => createAppRouter(queryClient), [queryClient]);
+    return <RouterProvider router={router} />
+}
