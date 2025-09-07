@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 // Wrapper de render con provider
 
 import { ReactElement } from 'react'
@@ -76,7 +77,7 @@ const renderWithRouter = (
             {children}
         </MemoryRouterWrapper>
     )
-    
+
     return rtlRender(ui, { wrapper: Wrapper, ...options })
 }
 

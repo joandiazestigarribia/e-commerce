@@ -1,21 +1,12 @@
 import { MainLayout } from '@/components/layouts/MainLayout';
 import { paths } from '@/config/paths';
-import { QueryClient, useQueryClient } from '@tanstack/react-query';
+import type { QueryClient } from '@tanstack/react-query';
+import { useQueryClient } from '@tanstack/react-query';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { RootErrorBoundary } from './ErrorBoundary';
 import { useMemo } from 'react';
 
-
-const convertNamed = (queryClient: QueryClient, pick: (m: any) => any) => (m: any) => {
-    return {
-        loader: m.clientLoader?.(queryClient),
-        action: m.clientAction?.(queryClient),
-        Component: pick(m),
-        ErrorBoundary: m.ErrorBoundary ?? m.HomeErrorBoundary ?? m.ProductErrorBoundary,
-    };
-};
-
-export const createAppRouter = (queryClient: QueryClient) => createBrowserRouter([
+const createAppRouter = (queryClient: QueryClient) => createBrowserRouter([
     {
         path: "/",
         element: <MainLayout />,
@@ -24,16 +15,26 @@ export const createAppRouter = (queryClient: QueryClient) => createBrowserRouter
             {
                 index: true,
                 lazy: () =>
-                    import('@/components/layouts/Home/Home').then(
-                        convertNamed(queryClient, (m) => m.Home)
-                    )
+                    Promise.all([
+                        import('@/components/layouts/Home/Home'),
+                        import('@/components/layouts/Home/loader'),
+                    ]).then(([m, data]) => ({
+                        loader: data.clientLoader?.(queryClient),
+                        Component: m.Home,
+                        ErrorBoundary: m.HomeErrorBoundary,
+                    }))
             },
             {
                 path: paths.product.path,
                 lazy: () =>
-                    import('./routes/product/ProductPage').then(
-                        convertNamed(queryClient, (m) => m.ProductPage)
-                    )
+                    Promise.all([
+                        import('./routes/product/ProductPage'),
+                        import('./routes/product/loader'),
+                    ]).then(([m, data]) => ({
+                        loader: data.clientLoader?.(queryClient),
+                        Component: m.ProductPage,
+                        ErrorBoundary: m.ProductErrorBoundary,
+                    }))
             }
         ]
     }

@@ -26,7 +26,12 @@ export default defineConfig({
         'src/testing/',
         '**/*.d.ts',
         '**/*.test.{ts,tsx}',
-        '**/__tests__/**'
+        '**/__tests__/**',
+        'src/main.tsx',
+        'src/app/index.tsx',
+        'src/app/router.tsx',
+        'src/**/index.tsx',
+        'src/config/*.ts'
       ]
     }
   }

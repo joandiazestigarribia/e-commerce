@@ -9,7 +9,7 @@ import { AppRouter } from './router';
 // TODO: Revisar
 // TODO: Dentro del suspense agregar un spinner
 
-export const queryClient = new QueryClient(queryConfig)
+const queryClient = new QueryClient(queryConfig)
 
 function App() {
   return (
