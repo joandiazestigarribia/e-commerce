@@ -67,3 +67,4 @@ export default tseslint.config([
   },
 ])
 ```
+## CI/CD Status ✅ GitHub Actions configurado
