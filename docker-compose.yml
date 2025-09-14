@@ -1,0 +1,47 @@
+version: '3.9'
+
+services:
+  web:
+    build: 
+      context: .
+      target: production
+    container_name: ecommerce-web
+    ports:
+      - "8080:80"
+    environment:
+      - NODE_ENV=production
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+    networks:
+      - ecommerce-network
+
+  # Para desarrollo local con hot reload
+  web-dev:
+    build:
+      context: .
+      target: builder
+    container_name: ecommerce-dev
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+      - /app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: npm run dev -- --host 0.0.0.0
+    profiles:
+      - dev
+    networks:
+      - ecommerce-network
+
+networks:
+  ecommerce-network:
+    driver: bridge
+
+volumes:
+  node_modules:
