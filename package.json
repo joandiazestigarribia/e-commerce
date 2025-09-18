@@ -14,10 +14,11 @@
     "test:run": "vitest run",
     "test:coverage": "vitest --coverage",
     "test:watch": "vitest --watch",
-    "docker:build": "docker build -t ecommerce-app .",
-    "docker:run": "docker run -p 8080:80 ecommerce-app",
+    "docker:build": "docker build -t ecommerce-web .",
+    "docker:run": "docker run -p 8080:80 --name ecommerce-web ecommerce-web",
     "docker:dev": "docker-compose --profile dev up --build",
     "docker:prod": "docker-compose up --build",
+    "docker:stop": "docker-compose down",
     "docker:clean": "docker system prune -f && docker image prune -f"
   },
   "dependencies": {

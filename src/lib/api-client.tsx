@@ -1,6 +1,10 @@
+import { env } from "@/config/env";
+
+const baseURL = env.API_BASE_URL;
+
 export const fetchProducts = async () => {
     try {
-        const url = 'https://fakestoreapi.com/products';
+        const url = `${baseURL}/products`;
         const response = await fetch(url);
 
         if (!response.ok) {
@@ -10,14 +14,16 @@ export const fetchProducts = async () => {
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error('Error fetching products:', error);
+        if (env.ENABLE_DEBUG) {
+            console.error('Error fetching products:', error);
+        }
         throw error;
     }
 };
 
 export const fetchProduct = async (id: number) => {
     try {
-        const url = `https://fakestoreapi.com/products/${id}`;
+        const url = `${baseURL}/products/${id}`;
         const response = await fetch(url);
 
         if (!response.ok) {
@@ -27,7 +33,9 @@ export const fetchProduct = async (id: number) => {
         const data = await response.json();
         return data;
     } catch (error) {
-        console.error('Error fetching product:', error);
+        if (env.ENABLE_DEBUG) {
+            console.error('Error fetching product:', error);
+        }
         throw error;
     }
 }

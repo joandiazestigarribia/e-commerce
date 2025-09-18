@@ -1,17 +1,13 @@
 # Build stage
 FROM node:20-alpine AS builder
 
-# Instalar dependencias necesarias para compilación
-RUN apk add --no-cache git
-
 WORKDIR /app
 
-# Copiar archivos de dependencias primero (mejor cache de Docker)
+# Copiar archivos de dependencias
 COPY package*.json ./
 
-# Instalar dependencias con optimizaciones
-RUN npm ci --only=production --ignore-scripts && \
-    npm cache clean --force
+# Instalar todas las dependencias (incluyendo devDependencies para el build)
+RUN npm ci
 
 # Copiar código fuente
 COPY . .
@@ -25,55 +21,26 @@ FROM nginx:alpine AS production
 # Instalar curl para health checks
 RUN apk add --no-cache curl
 
-# Crear usuario no-root para seguridad
-RUN addgroup -g 1001 -S nodejs && \
-    adduser -S nextjs -u 1001
-
-# Configuración personalizada de Nginx
+# Copiar archivos construidos
 COPY --from=builder /app/dist /usr/share/nginx/html
 
-# Configuración de Nginx optimizada para SPA
-COPY <<EOF /etc/nginx/conf.d/default.conf
-server {
-    listen 80;
-    server_name localhost;
-    root /usr/share/nginx/html;
-    index index.html;
-
-    # Compresión gzip
-    gzip on;
-    gzip_vary on;
-    gzip_min_length 1024;
-    gzip_types text/plain text/css text/xml text/javascript application/javascript application/xml+rss application/json;
-
-    # Cache para assets estáticos
-    location ~* \.(js|css|png|jpg|jpeg|gif|ico|svg)$ {
-        expires 1y;
-        add_header Cache-Control "public, immutable";
-    }
-
-    # SPA fallback
-    location / {
-        try_files \$uri \$uri/ /index.html;
-    }
-
-    # Health check endpoint
-    location /health {
-        access_log off;
-        return 200 "healthy\n";
-        add_header Content-Type text/plain;
-    }
-}
-EOF
-
-# Cambiar propietario de archivos
-RUN chown -R nginx:nginx /usr/share/nginx/html && \
-    chown -R nginx:nginx /var/cache/nginx && \
-    chown -R nginx:nginx /var/log/nginx && \
-    chown -R nginx:nginx /etc/nginx/conf.d
-
-# Cambiar a usuario no-root
-USER nginx
+# Crear configuración de Nginx para SPA
+RUN echo 'server { \
+    listen 80; \
+    server_name localhost; \
+    root /usr/share/nginx/html; \
+    index index.html; \
+    \
+    location / { \
+        try_files $uri $uri/ /index.html; \
+    } \
+    \
+    location /health { \
+        access_log off; \
+        return 200 "healthy\\n"; \
+        add_header Content-Type text/plain; \
+    } \
+}' > /etc/nginx/conf.d/default.conf
 
 EXPOSE 80
 
