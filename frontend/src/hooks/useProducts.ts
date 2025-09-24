@@ -1,8 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
 import { fetchProducts } from '@/lib/api-client';
 
-// TODO: Revisar
-
 export const useProducts = () => {
     const {
         data: products = [],
@@ -14,7 +12,7 @@ export const useProducts = () => {
         queryFn: fetchProducts,
         staleTime: 5 * 60 * 1000, // 5 minutos
         refetchOnWindowFocus: false,
-        retry: 3,
+        retry: false,
         retryDelay: (attemptIndex) => Math.min(1000 * 2 ** attemptIndex, 30000)
     });
 

@@ -35,5 +35,7 @@ describe('useProducts', () => {
         expect(result.current.error).toBeNull()
     })
 
-    it('exposes error when API fails', async () => { }, 1) // placeholder to keep line numbers
+    it('exposes error when API fails', async () => { 
+        // TODO: Implementar test de error
+    })
 })

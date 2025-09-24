@@ -19,16 +19,16 @@ test('carga producto individual por ID', async () => {
     )
 
     await waitFor(() => {
-        expect(screen.getByRole('heading', { 
-            level: 1, 
-            name: /test product 1/i 
+        expect(screen.getByRole('heading', {
+            level: 1,
+            name: /test product 1/i
         })).toBeInTheDocument()
     }, { timeout: 3000 })
 
     // Verificar elementos específicos de la página de producto
     expect(screen.getByRole('img', { name: /test product 1/i })).toBeInTheDocument()
     expect(screen.getByRole('button', { name: /add to bag/i })).toBeInTheDocument()
-    
+
     // Verificar elementos únicos de la página de producto
     expect(screen.getByText(/final sale/i)).toBeInTheDocument()
     expect(screen.getByText(/reviews/i)).toBeInTheDocument()
@@ -37,9 +37,13 @@ test('carga producto individual por ID', async () => {
 
 test('muestra 404 cuando el producto no existe', async () => {
     server.use(
-        http.get('https://fakestoreapi.com/products/999', () => {
+        http.get('http://localhost:3000/api/products/999', () => {
             return HttpResponse.json(
-                { message: 'Product not found' },
+                {
+                    success: false,
+                    message: 'HTTP error! status: 404',
+                    timestamp: new Date().toISOString()
+                },
                 { status: 404 }
             )
         })
@@ -57,7 +61,7 @@ test('muestra 404 cuando el producto no existe', async () => {
     await waitFor(() => {
         expect(screen.getByText(/product not found/i)).toBeInTheDocument()
     }, { timeout: 3000 })
-    
+
     expect(screen.queryByRole('button', { name: /add to bag/i })).not.toBeInTheDocument()
     expect(screen.queryByText(/final sale/i)).not.toBeInTheDocument()
 })
