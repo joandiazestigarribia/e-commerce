@@ -103,7 +103,7 @@ export const ProductPage = () => {
                             ${discountedPrice} ARS
                         </span>
                         <span className="text-lg text-gray-400 line-through">
-                            ${product.price.toFixed(2)} ARS
+                            ${product.price} ARS
                         </span>
                     </div>
 
