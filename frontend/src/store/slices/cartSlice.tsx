@@ -53,6 +53,7 @@ export const cartSlice = createSlice({
             const totals = calculateTotals(state.items)
             state.itemCount = totals.itemCount
             state.total = totals.total
+            state.isOpen = true;
         },
         removeFromCart: (state, action: PayloadAction<number>) => {
             const itemIdPayload = action.payload;

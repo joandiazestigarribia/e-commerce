@@ -28,7 +28,7 @@ export const Home = () => {
     if (loading) {
         return (
             <div className="flex justify-center items-center min-h-screen bg-white">
-                <div className="text-xl text-gray-600">Cargando productos...</div>
+                <div className="text-xl text-gray-600" data-testid="loading-spinner">Cargando productos...</div>
             </div>
         );
     }
@@ -36,7 +36,7 @@ export const Home = () => {
     if (error) {
         return (
             <div className="flex justify-center items-center min-h-screen bg-white">
-                <div className="text-red-500 text-xl">Error: {error}</div>
+                <div className="text-red-500 text-xl" data-testid="error-message">Error cargando inicio: {error}</div>
             </div>
         );
     }
@@ -69,7 +69,7 @@ export const Home = () => {
                 <div className="">
                     <div className="w-full py-[8px]">
                         <div className="text-center">
-                            <p className="text-[10px] text-gray-600 font-medium tracking-wide">
+                            <p className="text-[10px] text-gray-600 font-medium tracking-wide" data-testid="shipping-message">
                                 FREE INTERNATIONAL SHIPPING FOR ORDERS OVER $150
                             </p>
                         </div>

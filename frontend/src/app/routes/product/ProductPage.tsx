@@ -16,7 +16,7 @@ export const ProductErrorBoundary = () => {
                 ? error
                 : 'Error desconocido';
     return (
-        <div className="flex justify-center items-center min-h-screen bg-white">
+        <div className="flex justify-center items-center min-h-screen bg-white" data-testid="product-not-found">
             <div className="text-red-500 text-xl">Error: {message}</div>
         </div>
     )
@@ -40,7 +40,7 @@ export const ProductPage = () => {
 
     if (error || !product) {
         return (
-            <div className="flex items-center justify-center min-h-screen">
+            <div className="flex items-center justify-center min-h-screen" data-testid="product-not-found">
                 <div className="text-lg">Product not found</div>
             </div>
         );
@@ -62,7 +62,7 @@ export const ProductPage = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                 {/* Imagen del producto */}
                 <div className="space-y-4">
-                    <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden flex justify-center">
+                    <div className="aspect-square bg-gray-100 rounded-lg overflow-hidden flex justify-center" data-testid="product-image">
                         <img
                             src={product.image}
                             alt={product.title}
@@ -74,12 +74,12 @@ export const ProductPage = () => {
                 {/* Detalles del producto */}
                 <div className="space-y-6">
                     {/* Etiqueta Final Sale */}
-                    <div className="text-sm text-gray-600 tracking-widest">
+                    <div className="text-sm text-gray-600 tracking-widest" data-testid="final-sale-label">
                         FINAL SALE
                     </div>
 
                     {/* Título */}
-                    <h1 className="text-2xl font-light tracking-wide uppercase">
+                    <h1 className="text-2xl font-light tracking-wide uppercase" data-testid="product-title">
                         {product.title}
                     </h1>
 
@@ -87,45 +87,45 @@ export const ProductPage = () => {
                     <div className="flex items-center space-x-2">
                         <div className="flex text-yellow-400">
                             {[...Array(5)].map((_, i) => (
-                                <span key={i} className={i < Math.floor(product.rating.rate) ? "★" : "☆"}>
+                                <span key={i} className={i < Math.floor(product.rating.rate) ? "★" : "☆"} data-testid="product-rating">
                                     ★
                                 </span>
                             ))}
                         </div>
-                        <span className="text-sm text-gray-600">
+                        <span className="text-sm text-gray-600" data-testid="product-reviews">
                             {product.rating.count} REVIEWS
                         </span>
                     </div>
 
                     {/* Precio */}
                     <div className="flex items-center space-x-3">
-                        <span className="text-xl font-medium">
+                        <span className="text-xl font-medium" data-testid="product-price">
                             ${discountedPrice} ARS
                         </span>
-                        <span className="text-lg text-gray-400 line-through">
+                        <span className="text-lg text-gray-400 line-through" data-testid="product-price-original">
                             ${product.price} ARS
                         </span>
                     </div>
 
                     {/* Descripción */}
-                    <div className="text-gray-700 leading-relaxed">
+                    <div className="text-gray-700 leading-relaxed" data-testid="product-description">
                         {product.description}
                     </div>
 
                     {/* Material */}
-                    <div className="text-sm text-gray-600">
+                    <div className="text-sm text-gray-600" data-testid="product-material">
                         Made from 100% cotton.
                     </div>
 
                     {/* Icono de algodón (placeholder) */}
-                    <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
+                    <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center" data-testid="product-cotton-icon">
                         <span className="text-xs">🌿</span>
                     </div>
 
                     {/* Selector de talla */}
                     <div className="space-y-3">
                         <div className="flex items-center justify-between">
-                            <span className="text-sm font-medium tracking-wide">
+                            <span className="text-sm font-medium tracking-wide" data-testid="product-size-label">
                                 US SIZE
                             </span>
                         </div>
@@ -150,6 +150,7 @@ export const ProductPage = () => {
                         className="w-full bg-black text-white py-4 text-sm font-medium tracking-wide hover:bg-gray-800 transition-colors"
                         // disabled={!selectedSize}
                         onClick={handleAddToCart}
+                        data-testid="add-to-cart"
                     >
                         ADD TO BAG
                     </button>

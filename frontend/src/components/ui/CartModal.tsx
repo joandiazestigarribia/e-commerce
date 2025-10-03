@@ -1,10 +1,27 @@
 import { useAppSelector, useAppDispatch } from '@/hooks';
 import { closeCart, removeFromCart, updateQuantity, clearCart } from '@/store/slices/cartSlice';
+import { useEffect } from 'react';
 
 
 export const CartModal = () => {
     const { items, total, isOpen/* , itemCount */ } = useAppSelector(state => state.cart);
     const dispatch = useAppDispatch();
+
+    useEffect(() => {
+        const handleKeyDown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape' && isOpen) {
+                dispatch(closeCart());
+            }
+        };
+
+        if (isOpen) {
+            document.addEventListener('keydown', handleKeyDown);
+        }
+
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [isOpen, dispatch]);
 
     if (!isOpen) return null;
 
@@ -33,7 +50,7 @@ export const CartModal = () => {
             />
 
             {/* Modal */}
-            <div className="fixed right-0 top-0 h-full w-96 bg-white shadow-lg z-50 transform transition-transform duration-300 z-[999]">
+            <div className="fixed right-0 top-0 h-full w-96 bg-white shadow-lg transform transition-transform duration-300 z-[999]" data-testid="cart-modal">
                 <div className="flex flex-col h-full">
                     {/* Header */}
                     <div className="flex items-center justify-between p-4 border-b">
@@ -51,7 +68,7 @@ export const CartModal = () => {
                     {/* Content */}
                     <div className="flex-1 overflow-y-auto">
                         {items.length === 0 ? (
-                            <div className="flex flex-col items-center justify-center h-full text-gray-500">
+                            <div className="flex flex-col items-center justify-center h-full text-gray-500" data-testid="empty-cart-message">
                                 <svg className="w-16 h-16 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
                                 </svg>
@@ -60,7 +77,7 @@ export const CartModal = () => {
                         ) : (
                             <div className="p-4 space-y-4">
                                 {items.map((item) => (
-                                    <div key={item.id} className="flex items-center space-x-3 border-b pb-4">
+                                    <div key={item.id} className="flex items-center space-x-3 border-b pb-4" data-testid="cart-item">
                                         <img
                                             src={item.image}
                                             alt={item.title}
@@ -71,7 +88,7 @@ export const CartModal = () => {
                                                 {item.title}
                                             </h4>
                                             <p className="text-sm text-gray-600 mt-1">
-                                                ${item.price.toFixed(2)}
+                                                ${item.price}
                                             </p>
 
                                             {/* Quantity Controls */}
