@@ -5,6 +5,7 @@ import { Suspense } from 'react';
 import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { AppRouter } from './router';
+import { AuthProvider } from '@/contexts';
 
 // TODO: Revisar
 // TODO: Dentro del suspense agregar un spinner
@@ -16,9 +17,11 @@ function App() {
     <QueryClientProvider client={queryClient}>
       <Provider store={store}>
         <PersistGate loading={<div>Loading...</div>} persistor={persistor}>
-          <Suspense fallback={<div>Loading app...</div>}>
-            <AppRouter />
-          </Suspense>
+          <AuthProvider>
+            <Suspense fallback={<div>Loading app...</div>}>
+              <AppRouter />
+            </Suspense>
+          </AuthProvider>
         </PersistGate>
       </Provider>
     </QueryClientProvider >

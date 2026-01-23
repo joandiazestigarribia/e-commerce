@@ -1,4 +1,5 @@
 import { MainLayout } from '@/components/layouts/MainLayout';
+import { ProtectedRoute } from '@/components/auth/ProtectedRoute';
 import { paths } from '@/config/paths';
 import type { QueryClient } from '@tanstack/react-query';
 import { useQueryClient } from '@tanstack/react-query';
@@ -8,8 +9,24 @@ import { useMemo } from 'react';
 
 const createAppRouter = (queryClient: QueryClient) => createBrowserRouter([
     {
-        path: "/",
-        element: <MainLayout />,
+        path: paths.auth.login,
+        lazy: () => import('./routes/auth/login/LoginPage').then(m => ({
+            Component: m.LoginPage,
+        }))
+    },
+    {
+        path: paths.auth.register,
+        lazy: () => import('./routes/auth/register/RegisterPage').then(m => ({
+            Component: m.RegisterPage,
+        }))
+    },
+    {
+        path: paths.home.path,
+        element: (
+            <ProtectedRoute>
+                <MainLayout />
+            </ProtectedRoute>
+        ),
         ErrorBoundary: RootErrorBoundary,
         children: [
             {

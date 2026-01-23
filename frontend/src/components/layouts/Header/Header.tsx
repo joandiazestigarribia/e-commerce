@@ -1,10 +1,23 @@
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '@/hooks';
 import { toggleCart } from '@/store/slices/cartSlice';
+import { useAuth } from '@/contexts/AuthContext';
 
 export const Header = () => {
     const { itemCount } = useAppSelector(state => state.cart);
     const dispatch = useAppDispatch();
+    const { user, isAuthenticated, logout } = useAuth();
+    const navigate = useNavigate();
+
+    const handleLogout = async () => {
+        try {
+            await logout();
+            navigate('/login');
+        } catch (error) {
+            console.error('Error al cerrar sesión:', error);
+        }
+    }
+
     const handleToggleCart = () => {
         dispatch(toggleCart());
     }
@@ -36,7 +49,7 @@ export const Header = () => {
 
                     <div className="absolute left-1/2 transform -translate-x-1/2">
                         <Link to="/" className="text-[16px] font-light text-gray-900 tracking-[2px]">
-                            ZULU & ZEPHYR
+                            ZEPHYRUS
                         </Link>
                     </div>
 
@@ -57,6 +70,28 @@ export const Header = () => {
                         <Link to="/blog" className="text-gray-600 hover:text-gray-900 font-medium tracking-wide mr-[15px]">
                             BLOG
                         </Link>
+                        {isAuthenticated ? (
+                            <div className="flex items-center mr-[15px]">
+                                <span className="text-gray-600 font-medium tracking-wide mr-[10px]">
+                                    Hola, {user?.firstName}
+                                </span>
+                                <button
+                                    onClick={handleLogout}
+                                    className="text-gray-600 hover:text-gray-900 font-medium tracking-wide"
+                                >
+                                    SALIR
+                                </button>
+                            </div>
+                        ) : (
+                            <div className="flex items-center mr-[15px]">
+                                <Link to="/login" className="text-gray-600 hover:text-gray-900 font-medium tracking-wide mr-[10px]">
+                                    ENTRAR
+                                </Link>
+                                <Link to="/register" className="text-gray-600 hover:text-gray-900 font-medium tracking-wide">
+                                    REGISTRO
+                                </Link>
+                            </div>
+                        )}
                         <button
                             onClick={handleToggleCart}
                             className="text-gray-600 hover:text-gray-900 relative"

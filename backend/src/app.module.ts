@@ -6,6 +6,8 @@ import { ProductsModule } from './products/products.module';
 import { SeedsModule } from './database/seeds/seeds.module';
 import { databaseConfig } from './config/database.config';
 import { ResponseInterceptor } from './common/interceptors/response.interceptor';
+import { UsersModule } from './users/users.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -17,6 +19,8 @@ import { ResponseInterceptor } from './common/interceptors/response.interceptor'
     TypeOrmModule.forRoot(databaseConfig),
     ProductsModule,
     SeedsModule,
+    AuthModule,
+    UsersModule,
   ],
   controllers: [],
   providers: [

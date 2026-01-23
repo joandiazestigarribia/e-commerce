@@ -5,5 +5,9 @@ export const paths = {
     },
     product: {
         path: '/p/:slug'
+    },
+    auth: {
+        login: '/login',
+        register: '/register',
     }
 }

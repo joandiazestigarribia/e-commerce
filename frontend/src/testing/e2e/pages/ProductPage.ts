@@ -108,7 +108,7 @@ export class ProductPage {
             await expect(cartModal).toBeHidden();
         }
 
-        await this.page.getByRole('link', { name: 'ZULU & ZEPHYR' }).click();
+        await this.page.getByRole('link', { name: 'ZEPHYRUS' }).click();
         await this.page.waitForURL('/');
     }
 
