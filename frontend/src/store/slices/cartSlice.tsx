@@ -1,8 +1,6 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { Product } from "@/types/api";
 
-// TODO: Revisar
-
 interface CartItem {
     id: number;
     title: string;

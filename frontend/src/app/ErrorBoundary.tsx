@@ -1,7 +1,5 @@
 import { useRouteError } from 'react-router-dom';
 
-// TODO: Crear mensajes de error
-
 export const RootErrorBoundary = () => {
     const error = useRouteError();
     const message =

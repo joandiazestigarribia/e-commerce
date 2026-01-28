@@ -3,8 +3,6 @@ import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import cartReducer from './slices/cartSlice';
 
-// TODO: Revisar
-
 const persistConfig = {
     key: 'root',
     storage,

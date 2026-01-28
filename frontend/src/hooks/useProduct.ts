@@ -5,7 +5,7 @@ export const useProduct = (id: number) => {
     const { data: product, isLoading, error } = useQuery({
         queryKey: ['product', id],
         queryFn: () => fetchProduct(id),
-        retry: false // Importante para tests - no reintentar en caso de error
+        retry: false
     })
 
     return { product, isLoading, error }

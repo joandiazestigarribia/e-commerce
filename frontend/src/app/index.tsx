@@ -6,9 +6,8 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 import { AppRouter } from './router';
 import { AuthProvider } from '@/contexts';
+import { FullPageSpinner } from '@/components/ui/Spinner';
 
-// TODO: Revisar
-// TODO: Dentro del suspense agregar un spinner
 
 const queryClient = new QueryClient(queryConfig)
 
@@ -18,7 +17,7 @@ function App() {
       <Provider store={store}>
         <PersistGate loading={<div>Loading...</div>} persistor={persistor}>
           <AuthProvider>
-            <Suspense fallback={<div>Loading app...</div>}>
+            <Suspense fallback={<FullPageSpinner />}>
               <AppRouter />
             </Suspense>
           </AuthProvider>

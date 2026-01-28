@@ -4,8 +4,8 @@ import { extractIdFromSlug } from "@/utils/createSlug";
 import { useState } from "react";
 import { addToCart } from "@/store/slices/cartSlice";
 import { useDispatch } from "react-redux";
+import { Spinner } from "@/components/ui/Spinner";
 
-// TODO: Crear mensaje de error
 
 export const ProductErrorBoundary = () => {
     const error = useRouteError();
@@ -32,8 +32,8 @@ export const ProductPage = () => {
 
     if (isLoading) {
         return (
-            <div className="flex items-center justify-center min-h-screen">
-                <div className="text-lg">Cargando producto...</div>
+            <div className="flex items-center justify-center min-h-screen bg-white" data-testid="loading-spinner">
+                <Spinner size="lg" />
             </div>
         );
     }

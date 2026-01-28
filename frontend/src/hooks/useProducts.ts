@@ -10,7 +10,7 @@ export const useProducts = () => {
     } = useQuery({
         queryKey: ['products'],
         queryFn: fetchProducts,
-        staleTime: 5 * 60 * 1000, // 5 minutos
+        staleTime: 5 * 60 * 1000,
         refetchOnWindowFocus: false,
         retry: false,
         retryDelay: (attemptIndex) => Math.min(1000 * 2 ** attemptIndex, 30000)

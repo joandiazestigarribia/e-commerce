@@ -39,4 +39,37 @@ export class ApiHelpers {
             route.continue();
         });
     }
+
+    async setupAuthenticatedUser(userData?: Partial<{
+        id: number;
+        email: string;
+        firstName: string;
+        lastName: string;
+        role: string;
+    }>) {
+        const defaultUser = {
+            id: 1,
+            email: 'user@ecommerce.com',
+            firstName: 'Test',
+            lastName: 'User',
+            role: 'user',
+            ...userData
+        };
+
+        await this.page.addInitScript(() => {
+            localStorage.setItem('access_token', 'fake-token-for-testing');
+        });
+    
+        await this.page.route('**/api/auth/me', route => {
+            route.fulfill({
+                status: 200,
+                contentType: 'application/json',
+                body: JSON.stringify({
+                    success: true,
+                    data: defaultUser,
+                    timestamp: new Date().toISOString()
+                })
+            });
+        });
+    }
 }

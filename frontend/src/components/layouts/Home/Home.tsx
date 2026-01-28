@@ -1,9 +1,8 @@
 import { ProductList } from '@/components/products/ProductList';
+import { Spinner } from '@/components/ui/Spinner';
 import { useProducts } from '@/hooks';
 import { Link, useRouteError } from 'react-router-dom';
 
-// TODO: Revisar
-// TODO: Crear mensaje de error
 
 export const HomeErrorBoundary = () => {
     const error = useRouteError();
@@ -27,8 +26,8 @@ export const Home = () => {
 
     if (loading) {
         return (
-            <div className="flex justify-center items-center min-h-screen bg-white">
-                <div className="text-xl text-gray-600" data-testid="loading-spinner">Cargando productos...</div>
+            <div className="flex justify-center items-center min-h-screen bg-white" data-testid="loading-spinner">
+                <Spinner size="lg" />
             </div>
         );
     }

@@ -1,8 +1,14 @@
 import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
 import { ProductPage } from '../pages/ProductPage';
+import { ApiHelpers } from '../helpers/api-helpers';
 
 test.describe('Cart Functionality', () => {
+    test.beforeEach(async ({ page }) => {
+        const apiHelpers = new ApiHelpers(page);
+        await apiHelpers.setupAuthenticatedUser();
+    });
+
     test('debe agregar múltiples productos al carrito', async ({ page }) => {
         const homePage = new HomePage(page);
         await homePage.navigate();

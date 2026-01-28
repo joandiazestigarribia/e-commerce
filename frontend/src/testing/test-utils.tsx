@@ -1,6 +1,3 @@
-/* eslint-disable react-refresh/only-export-components */
-// Wrapper de render con provider
-
 import { ReactElement } from 'react'
 import { render as rtlRender, RenderOptions } from '@testing-library/react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
@@ -8,19 +5,13 @@ import { Provider } from 'react-redux'
 import { BrowserRouter, MemoryRouter, MemoryRouterProps } from 'react-router-dom'
 import { store } from '@/store'
 
-// TODO: Revisar la estructura del provider (deberia importarse desde /src/app/index.tsx)?
 
 const createTestQueryClient = () =>
     new QueryClient({
         defaultOptions: {
             queries: { retry: false, staleTime: 0, gcTime: 0 },
             mutations: { retry: false }
-        }/* ,
-        logger: {
-            log: console.log,
-            warn: console.warn,
-            error: () => { } // Silenciar errores en tests
-        } */
+        }
     })
 
 interface AllTheProvidersProps {
@@ -41,7 +32,6 @@ const AllTheProviders = ({ children }: AllTheProvidersProps) => {
     )
 }
 
-// Wrapper para tests con MemoryRouter
 interface MemoryRouterWrapperProps {
     children: React.ReactNode
     routerProps?: MemoryRouterProps
@@ -66,7 +56,6 @@ const customRender = (
     options?: Omit<RenderOptions, 'wrapper'>
 ) => rtlRender(ui, { wrapper: AllTheProviders, ...options })
 
-// Función específica para tests con router
 const renderWithRouter = (
     ui: ReactElement,
     routerProps?: MemoryRouterProps,

@@ -1,11 +1,15 @@
 import { test, expect } from '@playwright/test';
 import { ProductPage } from '../pages/ProductPage';
 import { HomePage } from '../pages/HomePage';
+import { ApiHelpers } from '../helpers/api-helpers';
 
 test.describe('Product Detail Page', () => {
     let productPage: ProductPage;
 
     test.beforeEach(async ({ page }) => {
+        const apiHelpers = new ApiHelpers(page);
+        await apiHelpers.setupAuthenticatedUser();
+        
         productPage = new ProductPage(page);
     });
 
@@ -57,6 +61,11 @@ test.describe('Product Detail Page', () => {
 });
 
 test.describe('Product Detail - Navigation Flow', () => {
+    test.beforeEach(async ({ page }) => {
+        const apiHelpers = new ApiHelpers(page);
+        await apiHelpers.setupAuthenticatedUser();
+    });
+
     test('flujo completo: home -> producto -> agregar al carrito -> volver', async ({ page }) => {
         const homePage = new HomePage(page);
         await homePage.navigate();

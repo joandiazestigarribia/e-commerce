@@ -1,10 +1,14 @@
 import { test, expect } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
+import { ApiHelpers } from '../helpers/api-helpers';
 
 test.describe('Home Page', () => {
     let homePage: HomePage;
 
     test.beforeEach(async ({ page }) => {
+        const apiHelpers = new ApiHelpers(page);
+        await apiHelpers.setupAuthenticatedUser();
+        
         homePage = new HomePage(page);
     });
 
@@ -76,6 +80,11 @@ test.describe('Home Page', () => {
 });
 
 test.describe('Home Page - Responsive', () => {
+    test.beforeEach(async ({ page }) => {
+        const apiHelpers = new ApiHelpers(page);
+        await apiHelpers.setupAuthenticatedUser();
+    });
+
     test('debe funcionar correctamente en mobile', async ({ page }) => {
         await page.setViewportSize({ width: 375, height: 667 });
 

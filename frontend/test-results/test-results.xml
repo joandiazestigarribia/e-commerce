@@ -1,214 +1,201 @@
-<testsuites id="" name="" tests="80" failures="0" skipped="0" errors="0" time="143.29815299999999">
-<testsuite name="cart.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="chromium" tests="3" failures="0" skipped="0" time="30.168" errors="0">
-<testcase name="Cart Functionality › debe agregar múltiples productos al carrito" classname="cart.spec.ts" time="10.032">
+<testsuites id="" name="" tests="80" failures="0" skipped="0" errors="0" time="123.83170600000001">
+<testsuite name="cart.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="chromium" tests="3" failures="0" skipped="0" time="30.835" errors="0">
+<testcase name="Cart Functionality › debe agregar múltiples productos al carrito" classname="cart.spec.ts" time="10.75">
 </testcase>
-<testcase name="Cart Functionality › debe persistir carrito entre navegación" classname="cart.spec.ts" time="11.472">
+<testcase name="Cart Functionality › debe persistir carrito entre navegación" classname="cart.spec.ts" time="11.789">
 </testcase>
-<testcase name="Cart Functionality › debe manejar carrito vacío correctamente" classname="cart.spec.ts" time="8.664">
-</testcase>
-</testsuite>
-<testsuite name="home.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="chromium" tests="7" failures="0" skipped="0" time="37.143" errors="0">
-<testcase name="Home Page › debe mostrar lista de productos correctamente" classname="home.spec.ts" time="6.708">
-</testcase>
-<testcase name="Home Page › debe navegar a detalle de producto al hacer click" classname="home.spec.ts" time="4.463">
-</testcase>
-<testcase name="Home Page › debe agregar producto al carrito" classname="home.spec.ts" time="4.478">
-</testcase>
-<testcase name="Home Page › debe manejar error de API correctamente" classname="home.spec.ts" time="8.465">
-</testcase>
-<testcase name="Home Page › debe cumplir estándares básicos de accesibilidad" classname="home.spec.ts" time="4.229">
-</testcase>
-<testcase name="Home Page - Responsive › debe funcionar correctamente en mobile" classname="home.spec.ts" time="4.661">
-</testcase>
-<testcase name="Home Page - Responsive › debe funcionar correctamente en tablet" classname="home.spec.ts" time="4.139">
+<testcase name="Cart Functionality › debe manejar carrito vacío correctamente" classname="cart.spec.ts" time="8.296">
 </testcase>
 </testsuite>
-<testsuite name="product.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="chromium" tests="6" failures="0" skipped="0" time="23.885" errors="0">
-<testcase name="Product Detail Page › debe mostrar detalles del producto correctamente" classname="product.spec.ts" time="2.731">
+<testsuite name="home.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="chromium" tests="7" failures="0" skipped="0" time="32.406" errors="0">
+<testcase name="Home Page › debe mostrar lista de productos correctamente" classname="home.spec.ts" time="7.936">
 </testcase>
-<testcase name="Product Detail Page › debe agregar producto al carrito desde detalle" classname="product.spec.ts" time="2.58">
+<testcase name="Home Page › debe navegar a detalle de producto al hacer click" classname="home.spec.ts" time="3.474">
 </testcase>
-<testcase name="Product Detail Page › debe navegar de vuelta a home" classname="product.spec.ts" time="2.118">
+<testcase name="Home Page › debe agregar producto al carrito" classname="home.spec.ts" time="3.91">
 </testcase>
-<testcase name="Product Detail Page › debe manejar producto no encontrado" classname="product.spec.ts" time="8.602">
+<testcase name="Home Page › debe manejar error de API correctamente" classname="home.spec.ts" time="8.361">
 </testcase>
-<testcase name="Product Detail Page › debe cumplir estándares básicos de accesibilidad" classname="product.spec.ts" time="2.148">
+<testcase name="Home Page › debe cumplir estándares básicos de accesibilidad" classname="home.spec.ts" time="2.554">
 </testcase>
-<testcase name="Product Detail - Navigation Flow › flujo completo: home -&gt; producto -&gt; agregar al carrito -&gt; volver" classname="product.spec.ts" time="5.706">
+<testcase name="Home Page - Responsive › debe funcionar correctamente en mobile" classname="home.spec.ts" time="3.38">
+</testcase>
+<testcase name="Home Page - Responsive › debe funcionar correctamente en tablet" classname="home.spec.ts" time="2.791">
 </testcase>
 </testsuite>
-<testsuite name="cart.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="firefox" tests="3" failures="0" skipped="0" time="52.982" errors="0">
-<testcase name="Cart Functionality › debe agregar múltiples productos al carrito" classname="cart.spec.ts" time="10.131">
+<testsuite name="product.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="chromium" tests="6" failures="0" skipped="0" time="21.162" errors="0">
+<testcase name="Product Detail Page › debe mostrar detalles del producto correctamente" classname="product.spec.ts" time="2.016">
 </testcase>
-<testcase name="Cart Functionality › debe persistir carrito entre navegación" classname="cart.spec.ts" time="28.529">
+<testcase name="Product Detail Page › debe agregar producto al carrito desde detalle" classname="product.spec.ts" time="1.839">
+</testcase>
+<testcase name="Product Detail Page › debe navegar de vuelta a home" classname="product.spec.ts" time="1.821">
+</testcase>
+<testcase name="Product Detail Page › debe manejar producto no encontrado" classname="product.spec.ts" time="9.617">
+</testcase>
+<testcase name="Product Detail Page › debe cumplir estándares básicos de accesibilidad" classname="product.spec.ts" time="1.935">
+</testcase>
+<testcase name="Product Detail - Navigation Flow › flujo completo: home -&gt; producto -&gt; agregar al carrito -&gt; volver" classname="product.spec.ts" time="3.934">
+</testcase>
+</testsuite>
+<testsuite name="cart.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="firefox" tests="3" failures="0" skipped="0" time="31.529" errors="0">
+<testcase name="Cart Functionality › debe agregar múltiples productos al carrito" classname="cart.spec.ts" time="11.159">
+</testcase>
+<testcase name="Cart Functionality › debe persistir carrito entre navegación" classname="cart.spec.ts" time="12.012">
+</testcase>
+<testcase name="Cart Functionality › debe manejar carrito vacío correctamente" classname="cart.spec.ts" time="8.358">
+</testcase>
+</testsuite>
+<testsuite name="home.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="firefox" tests="7" failures="0" skipped="0" time="58.966" errors="0">
+<testcase name="Home Page › debe mostrar lista de productos correctamente" classname="home.spec.ts" time="8.96">
+</testcase>
+<testcase name="Home Page › debe navegar a detalle de producto al hacer click" classname="home.spec.ts" time="12.329">
 <system-out>
 <![CDATA[
-[[ATTACHMENT|cart-Cart-Functionality-de-8d9a5-ir-carrito-entre-navegación-firefox\test-failed-1.png]]
+[[ATTACHMENT|home-Home-Page-debe-navega-e4c54--de-producto-al-hacer-click-firefox\test-failed-1.png]]
 
-[[ATTACHMENT|cart-Cart-Functionality-de-8d9a5-ir-carrito-entre-navegación-firefox\video.webm]]
+[[ATTACHMENT|home-Home-Page-debe-navega-e4c54--de-producto-al-hacer-click-firefox\error-context.md]]
 
-[[ATTACHMENT|cart-Cart-Functionality-de-8d9a5-ir-carrito-entre-navegación-firefox\error-context.md]]
-
-[[ATTACHMENT|cart-Cart-Functionality-de-8d9a5-ir-carrito-entre-navegación-firefox-retry1\trace.zip]]
+[[ATTACHMENT|home-Home-Page-debe-navega-e4c54--de-producto-al-hacer-click-firefox-retry1\trace.zip]]
 ]]>
 </system-out>
 </testcase>
-<testcase name="Cart Functionality › debe manejar carrito vacío correctamente" classname="cart.spec.ts" time="14.322">
-<system-out>
-<![CDATA[
-[[ATTACHMENT|cart-Cart-Functionality-de-94d1d-carrito-vacío-correctamente-firefox\test-failed-1.png]]
-
-[[ATTACHMENT|cart-Cart-Functionality-de-94d1d-carrito-vacío-correctamente-firefox\error-context.md]]
-
-[[ATTACHMENT|cart-Cart-Functionality-de-94d1d-carrito-vacío-correctamente-firefox\video.webm]]
-
-[[ATTACHMENT|cart-Cart-Functionality-de-94d1d-carrito-vacío-correctamente-firefox-retry1\trace.zip]]
-]]>
-</system-out>
+<testcase name="Home Page › debe agregar producto al carrito" classname="home.spec.ts" time="9.277">
+</testcase>
+<testcase name="Home Page › debe manejar error de API correctamente" classname="home.spec.ts" time="12.728">
+</testcase>
+<testcase name="Home Page › debe cumplir estándares básicos de accesibilidad" classname="home.spec.ts" time="5.068">
+</testcase>
+<testcase name="Home Page - Responsive › debe funcionar correctamente en mobile" classname="home.spec.ts" time="5.182">
+</testcase>
+<testcase name="Home Page - Responsive › debe funcionar correctamente en tablet" classname="home.spec.ts" time="5.422">
 </testcase>
 </testsuite>
-<testsuite name="home.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="firefox" tests="7" failures="0" skipped="0" time="56.098" errors="0">
-<testcase name="Home Page › debe mostrar lista de productos correctamente" classname="home.spec.ts" time="10.877">
+<testsuite name="product.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="firefox" tests="6" failures="0" skipped="0" time="37.872" errors="0">
+<testcase name="Product Detail Page › debe mostrar detalles del producto correctamente" classname="product.spec.ts" time="4.486">
 </testcase>
-<testcase name="Home Page › debe navegar a detalle de producto al hacer click" classname="home.spec.ts" time="9.902">
+<testcase name="Product Detail Page › debe agregar producto al carrito desde detalle" classname="product.spec.ts" time="5.262">
 </testcase>
-<testcase name="Home Page › debe agregar producto al carrito" classname="home.spec.ts" time="6.94">
+<testcase name="Product Detail Page › debe navegar de vuelta a home" classname="product.spec.ts" time="5.293">
 </testcase>
-<testcase name="Home Page › debe manejar error de API correctamente" classname="home.spec.ts" time="11.336">
+<testcase name="Product Detail Page › debe manejar producto no encontrado" classname="product.spec.ts" time="10.59">
 </testcase>
-<testcase name="Home Page › debe cumplir estándares básicos de accesibilidad" classname="home.spec.ts" time="4.805">
+<testcase name="Product Detail Page › debe cumplir estándares básicos de accesibilidad" classname="product.spec.ts" time="4.827">
 </testcase>
-<testcase name="Home Page - Responsive › debe funcionar correctamente en mobile" classname="home.spec.ts" time="6.037">
-</testcase>
-<testcase name="Home Page - Responsive › debe funcionar correctamente en tablet" classname="home.spec.ts" time="6.201">
+<testcase name="Product Detail - Navigation Flow › flujo completo: home -&gt; producto -&gt; agregar al carrito -&gt; volver" classname="product.spec.ts" time="7.414">
 </testcase>
 </testsuite>
-<testsuite name="product.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="firefox" tests="6" failures="0" skipped="0" time="36.156" errors="0">
-<testcase name="Product Detail Page › debe mostrar detalles del producto correctamente" classname="product.spec.ts" time="5.073">
+<testsuite name="cart.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="webkit" tests="3" failures="0" skipped="0" time="19.172" errors="0">
+<testcase name="Cart Functionality › debe agregar múltiples productos al carrito" classname="cart.spec.ts" time="6.763">
 </testcase>
-<testcase name="Product Detail Page › debe agregar producto al carrito desde detalle" classname="product.spec.ts" time="4.677">
+<testcase name="Cart Functionality › debe persistir carrito entre navegación" classname="cart.spec.ts" time="9.018">
 </testcase>
-<testcase name="Product Detail Page › debe navegar de vuelta a home" classname="product.spec.ts" time="4.614">
-</testcase>
-<testcase name="Product Detail Page › debe manejar producto no encontrado" classname="product.spec.ts" time="10.261">
-</testcase>
-<testcase name="Product Detail Page › debe cumplir estándares básicos de accesibilidad" classname="product.spec.ts" time="5.055">
-</testcase>
-<testcase name="Product Detail - Navigation Flow › flujo completo: home -&gt; producto -&gt; agregar al carrito -&gt; volver" classname="product.spec.ts" time="6.476">
+<testcase name="Cart Functionality › debe manejar carrito vacío correctamente" classname="cart.spec.ts" time="3.391">
 </testcase>
 </testsuite>
-<testsuite name="cart.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="webkit" tests="3" failures="0" skipped="0" time="21.81" errors="0">
-<testcase name="Cart Functionality › debe agregar múltiples productos al carrito" classname="cart.spec.ts" time="7.154">
+<testsuite name="home.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="webkit" tests="7" failures="0" skipped="0" time="34.379" errors="0">
+<testcase name="Home Page › debe mostrar lista de productos correctamente" classname="home.spec.ts" time="4.449">
 </testcase>
-<testcase name="Cart Functionality › debe persistir carrito entre navegación" classname="cart.spec.ts" time="10.401">
+<testcase name="Home Page › debe navegar a detalle de producto al hacer click" classname="home.spec.ts" time="5.044">
 </testcase>
-<testcase name="Cart Functionality › debe manejar carrito vacío correctamente" classname="cart.spec.ts" time="4.255">
+<testcase name="Home Page › debe agregar producto al carrito" classname="home.spec.ts" time="5.15">
 </testcase>
-</testsuite>
-<testsuite name="home.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="webkit" tests="7" failures="0" skipped="0" time="43.709" errors="0">
-<testcase name="Home Page › debe mostrar lista de productos correctamente" classname="home.spec.ts" time="6.727">
+<testcase name="Home Page › debe manejar error de API correctamente" classname="home.spec.ts" time="9.254">
 </testcase>
-<testcase name="Home Page › debe navegar a detalle de producto al hacer click" classname="home.spec.ts" time="4.988">
+<testcase name="Home Page › debe cumplir estándares básicos de accesibilidad" classname="home.spec.ts" time="3.773">
 </testcase>
-<testcase name="Home Page › debe agregar producto al carrito" classname="home.spec.ts" time="7.915">
+<testcase name="Home Page - Responsive › debe funcionar correctamente en mobile" classname="home.spec.ts" time="3.208">
 </testcase>
-<testcase name="Home Page › debe manejar error de API correctamente" classname="home.spec.ts" time="10.751">
-</testcase>
-<testcase name="Home Page › debe cumplir estándares básicos de accesibilidad" classname="home.spec.ts" time="5.31">
-</testcase>
-<testcase name="Home Page - Responsive › debe funcionar correctamente en mobile" classname="home.spec.ts" time="3.916">
-</testcase>
-<testcase name="Home Page - Responsive › debe funcionar correctamente en tablet" classname="home.spec.ts" time="4.102">
+<testcase name="Home Page - Responsive › debe funcionar correctamente en tablet" classname="home.spec.ts" time="3.501">
 </testcase>
 </testsuite>
-<testsuite name="product.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="webkit" tests="6" failures="0" skipped="0" time="27.969" errors="0">
-<testcase name="Product Detail Page › debe mostrar detalles del producto correctamente" classname="product.spec.ts" time="3.269">
+<testsuite name="product.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="webkit" tests="6" failures="0" skipped="0" time="27.571" errors="0">
+<testcase name="Product Detail Page › debe mostrar detalles del producto correctamente" classname="product.spec.ts" time="3.043">
 </testcase>
-<testcase name="Product Detail Page › debe agregar producto al carrito desde detalle" classname="product.spec.ts" time="3.989">
+<testcase name="Product Detail Page › debe agregar producto al carrito desde detalle" classname="product.spec.ts" time="4.056">
 </testcase>
-<testcase name="Product Detail Page › debe navegar de vuelta a home" classname="product.spec.ts" time="3.392">
+<testcase name="Product Detail Page › debe navegar de vuelta a home" classname="product.spec.ts" time="2.921">
 </testcase>
-<testcase name="Product Detail Page › debe manejar producto no encontrado" classname="product.spec.ts" time="8.542">
+<testcase name="Product Detail Page › debe manejar producto no encontrado" classname="product.spec.ts" time="9.197">
 </testcase>
-<testcase name="Product Detail Page › debe cumplir estándares básicos de accesibilidad" classname="product.spec.ts" time="2.823">
+<testcase name="Product Detail Page › debe cumplir estándares básicos de accesibilidad" classname="product.spec.ts" time="2.856">
 </testcase>
-<testcase name="Product Detail - Navigation Flow › flujo completo: home -&gt; producto -&gt; agregar al carrito -&gt; volver" classname="product.spec.ts" time="5.954">
-</testcase>
-</testsuite>
-<testsuite name="cart.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="Mobile Chrome" tests="3" failures="0" skipped="0" time="20.837" errors="0">
-<testcase name="Cart Functionality › debe agregar múltiples productos al carrito" classname="cart.spec.ts" time="7.796">
-</testcase>
-<testcase name="Cart Functionality › debe persistir carrito entre navegación" classname="cart.spec.ts" time="7.877">
-</testcase>
-<testcase name="Cart Functionality › debe manejar carrito vacío correctamente" classname="cart.spec.ts" time="5.164">
+<testcase name="Product Detail - Navigation Flow › flujo completo: home -&gt; producto -&gt; agregar al carrito -&gt; volver" classname="product.spec.ts" time="5.498">
 </testcase>
 </testsuite>
-<testsuite name="home.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="Mobile Chrome" tests="7" failures="0" skipped="0" time="40.697" errors="0">
-<testcase name="Home Page › debe mostrar lista de productos correctamente" classname="home.spec.ts" time="4.459">
+<testsuite name="cart.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="Mobile Chrome" tests="3" failures="0" skipped="0" time="15.307" errors="0">
+<testcase name="Cart Functionality › debe agregar múltiples productos al carrito" classname="cart.spec.ts" time="5.834">
 </testcase>
-<testcase name="Home Page › debe navegar a detalle de producto al hacer click" classname="home.spec.ts" time="4.993">
+<testcase name="Cart Functionality › debe persistir carrito entre navegación" classname="cart.spec.ts" time="6.28">
 </testcase>
-<testcase name="Home Page › debe agregar producto al carrito" classname="home.spec.ts" time="4.879">
-</testcase>
-<testcase name="Home Page › debe manejar error de API correctamente" classname="home.spec.ts" time="9.034">
-</testcase>
-<testcase name="Home Page › debe cumplir estándares básicos de accesibilidad" classname="home.spec.ts" time="5.405">
-</testcase>
-<testcase name="Home Page - Responsive › debe funcionar correctamente en mobile" classname="home.spec.ts" time="5.548">
-</testcase>
-<testcase name="Home Page - Responsive › debe funcionar correctamente en tablet" classname="home.spec.ts" time="6.379">
+<testcase name="Cart Functionality › debe manejar carrito vacío correctamente" classname="cart.spec.ts" time="3.193">
 </testcase>
 </testsuite>
-<testsuite name="product.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="Mobile Chrome" tests="6" failures="0" skipped="0" time="26.349" errors="0">
-<testcase name="Product Detail Page › debe mostrar detalles del producto correctamente" classname="product.spec.ts" time="3.295">
+<testsuite name="home.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="Mobile Chrome" tests="7" failures="0" skipped="0" time="28.378" errors="0">
+<testcase name="Home Page › debe mostrar lista de productos correctamente" classname="home.spec.ts" time="3.097">
 </testcase>
-<testcase name="Product Detail Page › debe agregar producto al carrito desde detalle" classname="product.spec.ts" time="3.29">
+<testcase name="Home Page › debe navegar a detalle de producto al hacer click" classname="home.spec.ts" time="3.117">
 </testcase>
-<testcase name="Product Detail Page › debe navegar de vuelta a home" classname="product.spec.ts" time="3.106">
+<testcase name="Home Page › debe agregar producto al carrito" classname="home.spec.ts" time="3.113">
 </testcase>
-<testcase name="Product Detail Page › debe manejar producto no encontrado" classname="product.spec.ts" time="8.714">
+<testcase name="Home Page › debe manejar error de API correctamente" classname="home.spec.ts" time="8.675">
 </testcase>
-<testcase name="Product Detail Page › debe cumplir estándares básicos de accesibilidad" classname="product.spec.ts" time="2.243">
+<testcase name="Home Page › debe cumplir estándares básicos de accesibilidad" classname="home.spec.ts" time="3.553">
 </testcase>
-<testcase name="Product Detail - Navigation Flow › flujo completo: home -&gt; producto -&gt; agregar al carrito -&gt; volver" classname="product.spec.ts" time="5.701">
+<testcase name="Home Page - Responsive › debe funcionar correctamente en mobile" classname="home.spec.ts" time="3.507">
 </testcase>
-</testsuite>
-<testsuite name="cart.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="Mobile Safari" tests="3" failures="0" skipped="0" time="20.329" errors="0">
-<testcase name="Cart Functionality › debe agregar múltiples productos al carrito" classname="cart.spec.ts" time="7.164">
-</testcase>
-<testcase name="Cart Functionality › debe persistir carrito entre navegación" classname="cart.spec.ts" time="8.775">
-</testcase>
-<testcase name="Cart Functionality › debe manejar carrito vacío correctamente" classname="cart.spec.ts" time="4.39">
+<testcase name="Home Page - Responsive › debe funcionar correctamente en tablet" classname="home.spec.ts" time="3.316">
 </testcase>
 </testsuite>
-<testsuite name="home.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="Mobile Safari" tests="7" failures="0" skipped="0" time="36.329" errors="0">
-<testcase name="Home Page › debe mostrar lista de productos correctamente" classname="home.spec.ts" time="4.728">
+<testsuite name="product.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="Mobile Chrome" tests="6" failures="0" skipped="0" time="21.468" errors="0">
+<testcase name="Product Detail Page › debe mostrar detalles del producto correctamente" classname="product.spec.ts" time="2.541">
 </testcase>
-<testcase name="Home Page › debe navegar a detalle de producto al hacer click" classname="home.spec.ts" time="4.326">
+<testcase name="Product Detail Page › debe agregar producto al carrito desde detalle" classname="product.spec.ts" time="2.762">
 </testcase>
-<testcase name="Home Page › debe agregar producto al carrito" classname="home.spec.ts" time="5.978">
+<testcase name="Product Detail Page › debe navegar de vuelta a home" classname="product.spec.ts" time="1.824">
 </testcase>
-<testcase name="Home Page › debe manejar error de API correctamente" classname="home.spec.ts" time="9.25">
+<testcase name="Product Detail Page › debe manejar producto no encontrado" classname="product.spec.ts" time="8.442">
 </testcase>
-<testcase name="Home Page › debe cumplir estándares básicos de accesibilidad" classname="home.spec.ts" time="3.827">
+<testcase name="Product Detail Page › debe cumplir estándares básicos de accesibilidad" classname="product.spec.ts" time="1.851">
 </testcase>
-<testcase name="Home Page - Responsive › debe funcionar correctamente en mobile" classname="home.spec.ts" time="3.678">
-</testcase>
-<testcase name="Home Page - Responsive › debe funcionar correctamente en tablet" classname="home.spec.ts" time="4.542">
+<testcase name="Product Detail - Navigation Flow › flujo completo: home -&gt; producto -&gt; agregar al carrito -&gt; volver" classname="product.spec.ts" time="4.048">
 </testcase>
 </testsuite>
-<testsuite name="product.spec.ts" timestamp="2025-10-03T12:10:03.390Z" hostname="Mobile Safari" tests="6" failures="0" skipped="0" time="28.685" errors="0">
-<testcase name="Product Detail Page › debe mostrar detalles del producto correctamente" classname="product.spec.ts" time="3.573">
+<testsuite name="cart.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="Mobile Safari" tests="3" failures="0" skipped="0" time="18.189" errors="0">
+<testcase name="Cart Functionality › debe agregar múltiples productos al carrito" classname="cart.spec.ts" time="6.343">
 </testcase>
-<testcase name="Product Detail Page › debe agregar producto al carrito desde detalle" classname="product.spec.ts" time="4.275">
+<testcase name="Cart Functionality › debe persistir carrito entre navegación" classname="cart.spec.ts" time="8.565">
 </testcase>
-<testcase name="Product Detail Page › debe navegar de vuelta a home" classname="product.spec.ts" time="3.558">
+<testcase name="Cart Functionality › debe manejar carrito vacío correctamente" classname="cart.spec.ts" time="3.281">
 </testcase>
-<testcase name="Product Detail Page › debe manejar producto no encontrado" classname="product.spec.ts" time="8.564">
+</testsuite>
+<testsuite name="home.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="Mobile Safari" tests="7" failures="0" skipped="0" time="34.533" errors="0">
+<testcase name="Home Page › debe mostrar lista de productos correctamente" classname="home.spec.ts" time="4.907">
 </testcase>
-<testcase name="Product Detail Page › debe cumplir estándares básicos de accesibilidad" classname="product.spec.ts" time="2.94">
+<testcase name="Home Page › debe navegar a detalle de producto al hacer click" classname="home.spec.ts" time="3.919">
 </testcase>
-<testcase name="Product Detail - Navigation Flow › flujo completo: home -&gt; producto -&gt; agregar al carrito -&gt; volver" classname="product.spec.ts" time="5.775">
+<testcase name="Home Page › debe agregar producto al carrito" classname="home.spec.ts" time="5.061">
+</testcase>
+<testcase name="Home Page › debe manejar error de API correctamente" classname="home.spec.ts" time="8.93">
+</testcase>
+<testcase name="Home Page › debe cumplir estándares básicos de accesibilidad" classname="home.spec.ts" time="4.209">
+</testcase>
+<testcase name="Home Page - Responsive › debe funcionar correctamente en mobile" classname="home.spec.ts" time="3.112">
+</testcase>
+<testcase name="Home Page - Responsive › debe funcionar correctamente en tablet" classname="home.spec.ts" time="4.395">
+</testcase>
+</testsuite>
+<testsuite name="product.spec.ts" timestamp="2026-01-27T12:16:44.323Z" hostname="Mobile Safari" tests="6" failures="0" skipped="0" time="24.404" errors="0">
+<testcase name="Product Detail Page › debe mostrar detalles del producto correctamente" classname="product.spec.ts" time="2.563">
+</testcase>
+<testcase name="Product Detail Page › debe agregar producto al carrito desde detalle" classname="product.spec.ts" time="3.146">
+</testcase>
+<testcase name="Product Detail Page › debe navegar de vuelta a home" classname="product.spec.ts" time="2.997">
+</testcase>
+<testcase name="Product Detail Page › debe manejar producto no encontrado" classname="product.spec.ts" time="8.234">
+</testcase>
+<testcase name="Product Detail Page › debe cumplir estándares básicos de accesibilidad" classname="product.spec.ts" time="2.1">
+</testcase>
+<testcase name="Product Detail - Navigation Flow › flujo completo: home -&gt; producto -&gt; agregar al carrito -&gt; volver" classname="product.spec.ts" time="5.364">
 </testcase>
 </testsuite>
 </testsuites>

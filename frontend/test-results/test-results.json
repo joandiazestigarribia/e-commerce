@@ -176,7 +176,7 @@
         {
           "title": "Cart Functionality",
           "file": "cart.spec.ts",
-          "line": 5,
+          "line": 6,
           "column": 6,
           "specs": [
             {
@@ -195,12 +195,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 10032,
+                      "duration": 10750,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:04.825Z",
+                      "startTime": "2026-01-27T12:16:45.615Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -210,7 +210,7 @@
               ],
               "id": "1981448f0b79506fb670-10e064f53f876853f655",
               "file": "cart.spec.ts",
-              "line": 6,
+              "line": 12,
               "column": 5
             },
             {
@@ -229,12 +229,12 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 11472,
+                      "duration": 11789,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:04.779Z",
+                      "startTime": "2026-01-27T12:16:45.553Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -244,7 +244,7 @@
               ],
               "id": "1981448f0b79506fb670-299607d75a8ca1724c7a",
               "file": "cart.spec.ts",
-              "line": 23,
+              "line": 29,
               "column": 5
             },
             {
@@ -263,12 +263,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 8664,
+                      "duration": 8296,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:04.816Z",
+                      "startTime": "2026-01-27T12:16:45.542Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -278,7 +278,7 @@
               ],
               "id": "1981448f0b79506fb670-7614715e901e57b09f0a",
               "file": "cart.spec.ts",
-              "line": 55,
+              "line": 61,
               "column": 5
             },
             {
@@ -295,14 +295,14 @@
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 2,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 10131,
+                      "duration": 11159,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:25.726Z",
+                      "startTime": "2026-01-27T12:17:05.767Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -312,7 +312,7 @@
               ],
               "id": "1981448f0b79506fb670-5f9e9f9186f143f4437e",
               "file": "cart.spec.ts",
-              "line": 6,
+              "line": 12,
               "column": 5
             },
             {
@@ -330,82 +330,23 @@
                     {
                       "workerIndex": 5,
                       "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 15988,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/p\\/mens-casual-premium-slim-fit-t-shirts/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"http://localhost:5173/\"\u001b[22m\n",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/p\\/mens-casual-premium-slim-fit-t-shirts/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"http://localhost:5173/\"\u001b[22m\n\n    at C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\specs\\cart.spec.ts:39:28",
-                        "location": {
-                          "file": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\specs\\cart.spec.ts",
-                          "column": 28,
-                          "line": 39
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 37 |\u001b[39m         \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclickProductByTitle(\u001b[32m'Mens Casual Premium Slim Fit T-Shirts'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/\\/p\\/mens-casual-premium-slim-fit-t-shirts/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m\n \u001b[90m 41 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Mens Casual Premium Slim Fit T-Shirts'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\specs\\cart.spec.ts",
-                            "column": 28,
-                            "line": 39
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected pattern: \u001b[32m/\\/p\\/mens-casual-premium-slim-fit-t-shirts/\u001b[39m\nReceived string:  \u001b[31m\"http://localhost:5173/\"\u001b[39m\nTimeout: 5000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 5000ms\u001b[22m\n\u001b[2m    9 × unexpected value \"http://localhost:5173/\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 37 |\u001b[39m         \u001b[36mawait\u001b[39m homePage\u001b[33m.\u001b[39mclickProductByTitle(\u001b[32m'Mens Casual Premium Slim Fit T-Shirts'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 38 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 39 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[35m/\\/p\\/mens-casual-premium-slim-fit-t-shirts/\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 40 |\u001b[39m\n \u001b[90m 41 |\u001b[39m         \u001b[36mawait\u001b[39m expect(page\u001b[33m.\u001b[39mlocator(\u001b[32m'h1'\u001b[39m))\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Mens Casual Premium Slim Fit T-Shirts'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 42 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\specs\\cart.spec.ts:39:28\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-10-03T12:10:27.414Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\test-results\\cart-Cart-Functionality-de-8d9a5-ir-carrito-entre-navegación-firefox\\test-failed-1.png"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\test-results\\cart-Cart-Functionality-de-8d9a5-ir-carrito-entre-navegación-firefox\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\test-results\\cart-Cart-Functionality-de-8d9a5-ir-carrito-entre-navegación-firefox\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\specs\\cart.spec.ts",
-                        "column": 28,
-                        "line": 39
-                      }
-                    },
-                    {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 12541,
+                      "duration": 12012,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
-                      "retry": 1,
-                      "startTime": "2025-10-03T12:10:46.644Z",
+                      "retry": 0,
+                      "startTime": "2026-01-27T12:17:06.018Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\test-results\\cart-Cart-Functionality-de-8d9a5-ir-carrito-entre-navegación-firefox-retry1\\trace.zip"
-                        }
-                      ]
+                      "attachments": []
                     }
                   ],
-                  "status": "flaky"
+                  "status": "expected"
                 }
               ],
               "id": "1981448f0b79506fb670-188bdb2c28c105f0aa33",
               "file": "cart.spec.ts",
-              "line": 23,
+              "line": 29,
               "column": 5
             },
             {
@@ -422,91 +363,24 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 6144,
-                      "error": {
-                        "message": "Error: page.goto: NS_ERROR_CONNECTION_REFUSED\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5173/\", waiting until \"networkidle\"\u001b[22m\n",
-                        "stack": "Error: page.goto: NS_ERROR_CONNECTION_REFUSED\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5173/\", waiting until \"networkidle\"\u001b[22m\n\n    at PageHelpers.navigateAndWaitForLoad (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\page-helpers.ts:7:25)\n    at HomePage.navigate (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\pages\\HomePage.ts:39:32)\n    at C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\specs\\cart.spec.ts:57:24",
-                        "location": {
-                          "file": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\page-helpers.ts",
-                          "column": 25,
-                          "line": 7
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\page-helpers.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m\n \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m navigateAndWaitForLoad(path\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(path\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForPageLoad()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\page-helpers.ts",
-                            "column": 25,
-                            "line": 7
-                          },
-                          "message": "Error: page.goto: NS_ERROR_CONNECTION_REFUSED\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5173/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\page-helpers.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m\n \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m navigateAndWaitForLoad(path\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(path\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForPageLoad()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[2m    at PageHelpers.navigateAndWaitForLoad (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\page-helpers.ts:7:25)\u001b[22m\n\u001b[2m    at HomePage.navigate (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\pages\\HomePage.ts:39:32)\u001b[22m\n\u001b[2m    at C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\specs\\cart.spec.ts:57:24\u001b[22m"
-                        },
-                        {
-                          "location": {
-                            "file": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\api-helpers.ts",
-                            "column": 43,
-                            "line": 7
-                          },
-                          "message": "Error: page.waitForResponse: Test ended.\n\n\u001b[90m   at \u001b[39m..\\helpers\\api-helpers.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m\n \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m interceptApiCall(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m expectedData\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m any) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mconst\u001b[39m responsePromise \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForResponse(\n \u001b[90m    |\u001b[39m                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m             response \u001b[33m=>\u001b[39m response\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(endpoint) \u001b[33m&&\u001b[39m response\u001b[33m.\u001b[39mstatus() \u001b[33m===\u001b[39m \u001b[35m200\u001b[39m\n \u001b[90m  9 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[2m    at ApiHelpers.interceptApiCall (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\api-helpers.ts:7:43)\u001b[22m\n\u001b[2m    at HomePage.navigate (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\pages\\HomePage.ts:37:44)\u001b[22m\n\u001b[2m    at C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\specs\\cart.spec.ts:57:24\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-10-03T12:10:31.387Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\test-results\\cart-Cart-Functionality-de-94d1d-carrito-vacío-correctamente-firefox\\test-failed-1.png"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\test-results\\cart-Cart-Functionality-de-94d1d-carrito-vacío-correctamente-firefox\\error-context.md"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\test-results\\cart-Cart-Functionality-de-94d1d-carrito-vacío-correctamente-firefox\\video.webm"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\page-helpers.ts",
-                        "column": 25,
-                        "line": 7
-                      }
-                    },
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 1,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 8178,
+                      "duration": 8358,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
-                      "retry": 1,
-                      "startTime": "2025-10-03T12:10:42.276Z",
+                      "retry": 0,
+                      "startTime": "2026-01-27T12:17:08.838Z",
                       "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "trace",
-                          "contentType": "application/zip",
-                          "path": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\test-results\\cart-Cart-Functionality-de-94d1d-carrito-vacío-correctamente-firefox-retry1\\trace.zip"
-                        }
-                      ]
+                      "attachments": []
                     }
                   ],
-                  "status": "flaky"
+                  "status": "expected"
                 }
               ],
               "id": "1981448f0b79506fb670-059e165c7383b2949dca",
               "file": "cart.spec.ts",
-              "line": 55,
+              "line": 61,
               "column": 5
             },
             {
@@ -522,15 +396,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 0,
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 7154,
+                      "duration": 6763,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:08.253Z",
+                      "startTime": "2026-01-27T12:17:40.365Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -540,7 +414,7 @@
               ],
               "id": "1981448f0b79506fb670-9516bcabbb5c7f51c766",
               "file": "cart.spec.ts",
-              "line": 6,
+              "line": 12,
               "column": 5
             },
             {
@@ -556,15 +430,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 3,
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 10401,
+                      "duration": 9018,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:11.613Z",
+                      "startTime": "2026-01-27T12:17:44.110Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -574,7 +448,7 @@
               ],
               "id": "1981448f0b79506fb670-cf455eaf97a2459640d3",
               "file": "cart.spec.ts",
-              "line": 23,
+              "line": 29,
               "column": 5
             },
             {
@@ -590,15 +464,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 12,
+                      "workerIndex": 11,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4255,
+                      "duration": 3391,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:13.786Z",
+                      "startTime": "2026-01-27T12:17:47.683Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -608,7 +482,7 @@
               ],
               "id": "1981448f0b79506fb670-7d49b92208bdf2bea766",
               "file": "cart.spec.ts",
-              "line": 55,
+              "line": 61,
               "column": 5
             },
             {
@@ -624,15 +498,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 14,
+                      "workerIndex": 13,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 7796,
+                      "duration": 5834,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:35.529Z",
+                      "startTime": "2026-01-27T12:18:04.349Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -642,11 +516,45 @@
               ],
               "id": "1981448f0b79506fb670-778da5cf6f65655dc14c",
               "file": "cart.spec.ts",
-              "line": 6,
+              "line": 12,
               "column": 5
             },
             {
               "title": "debe persistir carrito entre navegación",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 6280,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T12:18:05.357Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1981448f0b79506fb670-6869576e8fb18ea167b0",
+              "file": "cart.spec.ts",
+              "line": 29,
+              "column": 5
+            },
+            {
+              "title": "debe manejar carrito vacío correctamente",
               "ok": true,
               "tags": [],
               "tests": [
@@ -661,46 +569,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7877,
+                      "duration": 3193,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:35.819Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "1981448f0b79506fb670-6869576e8fb18ea167b0",
-              "file": "cart.spec.ts",
-              "line": 23,
-              "column": 5
-            },
-            {
-              "title": "debe manejar carrito vacío correctamente",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 16,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 5164,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-10-03T12:11:38.667Z",
+                      "startTime": "2026-01-27T12:18:09.135Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -710,7 +584,7 @@
               ],
               "id": "1981448f0b79506fb670-035e212f8ab4e4ddcb37",
               "file": "cart.spec.ts",
-              "line": 55,
+              "line": 61,
               "column": 5
             },
             {
@@ -726,15 +600,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 18,
-                      "parallelIndex": 1,
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7164,
+                      "duration": 6343,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:58.780Z",
+                      "startTime": "2026-01-27T12:18:22.186Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -744,7 +618,7 @@
               ],
               "id": "1981448f0b79506fb670-c171b54159f6cec4d798",
               "file": "cart.spec.ts",
-              "line": 6,
+              "line": 12,
               "column": 5
             },
             {
@@ -760,15 +634,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 19,
-                      "parallelIndex": 0,
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 8775,
+                      "duration": 8565,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:59.377Z",
+                      "startTime": "2026-01-27T12:18:22.941Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -778,7 +652,7 @@
               ],
               "id": "1981448f0b79506fb670-69c4c7e9bc4f30be50a6",
               "file": "cart.spec.ts",
-              "line": 23,
+              "line": 29,
               "column": 5
             },
             {
@@ -794,15 +668,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 21,
+                      "workerIndex": 19,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4390,
+                      "duration": 3281,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:04.636Z",
+                      "startTime": "2026-01-27T12:18:25.451Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -812,7 +686,7 @@
               ],
               "id": "1981448f0b79506fb670-77205559059b936f342d",
               "file": "cart.spec.ts",
-              "line": 55,
+              "line": 61,
               "column": 5
             }
           ]
@@ -829,7 +703,7 @@
         {
           "title": "Home Page",
           "file": "home.spec.ts",
-          "line": 4,
+          "line": 5,
           "column": 6,
           "specs": [
             {
@@ -848,12 +722,12 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 6708,
+                      "duration": 7936,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:04.830Z",
+                      "startTime": "2026-01-27T12:16:45.701Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -863,7 +737,7 @@
               ],
               "id": "d318381359a9b96acb1e-c7c59237a46f5936fae2",
               "file": "home.spec.ts",
-              "line": 11,
+              "line": 15,
               "column": 5
             },
             {
@@ -879,15 +753,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4463,
+                      "duration": 3474,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:11.888Z",
+                      "startTime": "2026-01-27T12:16:54.063Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -897,7 +771,7 @@
               ],
               "id": "d318381359a9b96acb1e-c2cecff7cf3f75b1aa62",
               "file": "home.spec.ts",
-              "line": 16,
+              "line": 20,
               "column": 5
             },
             {
@@ -913,15 +787,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4478,
+                      "duration": 3910,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:13.806Z",
+                      "startTime": "2026-01-27T12:16:54.216Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -931,7 +805,7 @@
               ],
               "id": "d318381359a9b96acb1e-ae4447cbaacb03badaa8",
               "file": "home.spec.ts",
-              "line": 26,
+              "line": 30,
               "column": 5
             },
             {
@@ -950,12 +824,12 @@
                       "workerIndex": 0,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8465,
+                      "duration": 8361,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:15.246Z",
+                      "startTime": "2026-01-27T12:16:56.718Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -965,7 +839,7 @@
               ],
               "id": "d318381359a9b96acb1e-f306e3a8a902f99e7bc6",
               "file": "home.spec.ts",
-              "line": 55,
+              "line": 59,
               "column": 5
             },
             {
@@ -981,15 +855,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4229,
+                      "duration": 2554,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:16.366Z",
+                      "startTime": "2026-01-27T12:16:57.576Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -999,7 +873,7 @@
               ],
               "id": "d318381359a9b96acb1e-0d5d18cd700cf3be044f",
               "file": "home.spec.ts",
-              "line": 72,
+              "line": 76,
               "column": 5
             },
             {
@@ -1016,14 +890,14 @@
                   "results": [
                     {
                       "workerIndex": 7,
-                      "parallelIndex": 3,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 10877,
+                      "duration": 8960,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:34.653Z",
+                      "startTime": "2026-01-27T12:17:16.383Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1033,7 +907,7 @@
               ],
               "id": "d318381359a9b96acb1e-f1f224d93ea97ccbd6be",
               "file": "home.spec.ts",
-              "line": 11,
+              "line": 15,
               "column": 5
             },
             {
@@ -1050,24 +924,86 @@
                   "results": [
                     {
                       "workerIndex": 4,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 9902,
-                      "errors": [],
+                      "parallelIndex": 3,
+                      "status": "failed",
+                      "duration": 6532,
+                      "error": {
+                        "message": "Error: page.goto: NS_ERROR_CONNECTION_REFUSED\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5173/\", waiting until \"networkidle\"\u001b[22m\n",
+                        "stack": "Error: page.goto: NS_ERROR_CONNECTION_REFUSED\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5173/\", waiting until \"networkidle\"\u001b[22m\n\n    at PageHelpers.navigateAndWaitForLoad (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\page-helpers.ts:7:25)\n    at HomePage.navigate (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\pages\\HomePage.ts:39:32)\n    at C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\specs\\home.spec.ts:21:24",
+                        "location": {
+                          "file": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\page-helpers.ts",
+                          "column": 25,
+                          "line": 7
+                        },
+                        "snippet": "\u001b[90m   at \u001b[39m..\\helpers\\page-helpers.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m\n \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m navigateAndWaitForLoad(path\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(path\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForPageLoad()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m\u001b[0m"
+                      },
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\page-helpers.ts",
+                            "column": 25,
+                            "line": 7
+                          },
+                          "message": "Error: page.goto: NS_ERROR_CONNECTION_REFUSED\nCall log:\n\u001b[2m  - navigating to \"http://localhost:5173/\", waiting until \"networkidle\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\helpers\\page-helpers.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m\n \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m navigateAndWaitForLoad(path\u001b[33m:\u001b[39m string) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(path\u001b[33m,\u001b[39m { waitUntil\u001b[33m:\u001b[39m \u001b[32m'networkidle'\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                         \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m         \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mwaitForPageLoad()\u001b[33m;\u001b[39m\n \u001b[90m  9 |\u001b[39m     }\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[2m    at PageHelpers.navigateAndWaitForLoad (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\page-helpers.ts:7:25)\u001b[22m\n\u001b[2m    at HomePage.navigate (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\pages\\HomePage.ts:39:32)\u001b[22m\n\u001b[2m    at C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\specs\\home.spec.ts:21:24\u001b[22m"
+                        },
+                        {
+                          "location": {
+                            "file": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\api-helpers.ts",
+                            "column": 43,
+                            "line": 7
+                          },
+                          "message": "Error: page.waitForResponse: Test ended.\n\n\u001b[90m   at \u001b[39m..\\helpers\\api-helpers.ts:7\n\n\u001b[0m \u001b[90m  5 |\u001b[39m\n \u001b[90m  6 |\u001b[39m     \u001b[36masync\u001b[39m interceptApiCall(endpoint\u001b[33m:\u001b[39m string\u001b[33m,\u001b[39m expectedData\u001b[33m?\u001b[39m\u001b[33m:\u001b[39m any) {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  7 |\u001b[39m         \u001b[36mconst\u001b[39m responsePromise \u001b[33m=\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mwaitForResponse(\n \u001b[90m    |\u001b[39m                                           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m  8 |\u001b[39m             response \u001b[33m=>\u001b[39m response\u001b[33m.\u001b[39murl()\u001b[33m.\u001b[39mincludes(endpoint) \u001b[33m&&\u001b[39m response\u001b[33m.\u001b[39mstatus() \u001b[33m===\u001b[39m \u001b[35m200\u001b[39m\n \u001b[90m  9 |\u001b[39m         )\u001b[33m;\u001b[39m\n \u001b[90m 10 |\u001b[39m\u001b[0m\n\u001b[2m    at ApiHelpers.interceptApiCall (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\api-helpers.ts:7:43)\u001b[22m\n\u001b[2m    at HomePage.navigate (C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\pages\\HomePage.ts:37:44)\u001b[22m\n\u001b[2m    at C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\specs\\home.spec.ts:21:24\u001b[22m"
+                        }
+                      ],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:36.695Z",
+                      "startTime": "2026-01-27T12:17:17.554Z",
                       "annotations": [],
-                      "attachments": []
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\test-results\\home-Home-Page-debe-navega-e4c54--de-producto-al-hacer-click-firefox\\test-failed-1.png"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\test-results\\home-Home-Page-debe-navega-e4c54--de-producto-al-hacer-click-firefox\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\src\\testing\\e2e\\helpers\\page-helpers.ts",
+                        "column": 25,
+                        "line": 7
+                      }
+                    },
+                    {
+                      "workerIndex": 8,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 5797,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 1,
+                      "startTime": "2026-01-27T12:17:25.706Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Trabajo\\Documents\\Proyectos personales\\e-commerce\\frontend\\test-results\\home-Home-Page-debe-navega-e4c54--de-producto-al-hacer-click-firefox-retry1\\trace.zip"
+                        }
+                      ]
                     }
                   ],
-                  "status": "expected"
+                  "status": "flaky"
                 }
               ],
               "id": "d318381359a9b96acb1e-065e12b9de64c887304e",
               "file": "home.spec.ts",
-              "line": 16,
+              "line": 20,
               "column": 5
             },
             {
@@ -1083,15 +1019,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 6,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 6940,
+                      "duration": 9277,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:46.628Z",
+                      "startTime": "2026-01-27T12:17:18.284Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1101,7 +1037,7 @@
               ],
               "id": "d318381359a9b96acb1e-fe39525720955ab61f22",
               "file": "home.spec.ts",
-              "line": 26,
+              "line": 30,
               "column": 5
             },
             {
@@ -1117,15 +1053,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 3,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 11336,
+                      "duration": 12728,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:47.426Z",
+                      "startTime": "2026-01-27T12:17:19.523Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1135,7 +1071,7 @@
               ],
               "id": "d318381359a9b96acb1e-a8b74618205a310b1677",
               "file": "home.spec.ts",
-              "line": 55,
+              "line": 59,
               "column": 5
             },
             {
@@ -1151,15 +1087,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 7,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4805,
+                      "duration": 5068,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:51.592Z",
+                      "startTime": "2026-01-27T12:17:26.571Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1169,7 +1105,7 @@
               ],
               "id": "d318381359a9b96acb1e-2f64fb3033238f4c3045",
               "file": "home.spec.ts",
-              "line": 72,
+              "line": 76,
               "column": 5
             },
             {
@@ -1185,15 +1121,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 6727,
+                      "duration": 4449,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:16.494Z",
+                      "startTime": "2026-01-27T12:17:47.314Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1203,45 +1139,11 @@
               ],
               "id": "d318381359a9b96acb1e-64239af83e58e7361ab4",
               "file": "home.spec.ts",
-              "line": 11,
+              "line": 15,
               "column": 5
             },
             {
               "title": "debe navegar a detalle de producto al hacer click",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4988,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-10-03T12:11:15.573Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d318381359a9b96acb1e-e3850e58a69600f772cc",
-              "file": "home.spec.ts",
-              "line": 16,
-              "column": 5
-            },
-            {
-              "title": "debe agregar producto al carrito",
               "ok": true,
               "tags": [],
               "tests": [
@@ -1254,14 +1156,48 @@
                   "results": [
                     {
                       "workerIndex": 12,
-                      "parallelIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7915,
+                      "duration": 5044,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:18.493Z",
+                      "startTime": "2026-01-27T12:17:50.185Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-e3850e58a69600f772cc",
+              "file": "home.spec.ts",
+              "line": 20,
+              "column": 5
+            },
+            {
+              "title": "debe agregar producto al carrito",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5150,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T12:17:51.248Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1271,7 +1207,7 @@
               ],
               "id": "d318381359a9b96acb1e-1623a51fcaf95da9d6bb",
               "file": "home.spec.ts",
-              "line": 26,
+              "line": 30,
               "column": 5
             },
             {
@@ -1287,15 +1223,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 0,
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 10751,
+                      "duration": 9254,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:20.603Z",
+                      "startTime": "2026-01-27T12:17:51.787Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1305,7 +1241,7 @@
               ],
               "id": "d318381359a9b96acb1e-597cabee9be9fa6fdc5e",
               "file": "home.spec.ts",
-              "line": 55,
+              "line": 59,
               "column": 5
             },
             {
@@ -1321,15 +1257,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 3,
+                      "workerIndex": 10,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5310,
+                      "duration": 3773,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:22.177Z",
+                      "startTime": "2026-01-27T12:17:53.292Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1339,7 +1275,7 @@
               ],
               "id": "d318381359a9b96acb1e-d2acc7e6458cc9b03edd",
               "file": "home.spec.ts",
-              "line": 72,
+              "line": 76,
               "column": 5
             },
             {
@@ -1355,15 +1291,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 17,
+                      "workerIndex": 16,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4459,
+                      "duration": 3097,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:40.520Z",
+                      "startTime": "2026-01-27T12:18:10.368Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1373,7 +1309,7 @@
               ],
               "id": "d318381359a9b96acb1e-c6e2132666e986bca6a6",
               "file": "home.spec.ts",
-              "line": 11,
+              "line": 15,
               "column": 5
             },
             {
@@ -1389,15 +1325,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 14,
+                      "workerIndex": 13,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4993,
+                      "duration": 3117,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:43.531Z",
+                      "startTime": "2026-01-27T12:18:10.377Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1407,11 +1343,45 @@
               ],
               "id": "d318381359a9b96acb1e-9de1d4fc871a6140e5cd",
               "file": "home.spec.ts",
-              "line": 16,
+              "line": 20,
               "column": 5
             },
             {
               "title": "debe agregar producto al carrito",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "Mobile Chrome",
+                  "projectName": "Mobile Chrome",
+                  "results": [
+                    {
+                      "workerIndex": 14,
+                      "parallelIndex": 3,
+                      "status": "passed",
+                      "duration": 3113,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T12:18:11.821Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-44aa865bf5e0766b7f37",
+              "file": "home.spec.ts",
+              "line": 30,
+              "column": 5
+            },
+            {
+              "title": "debe manejar error de API correctamente",
               "ok": true,
               "tags": [],
               "tests": [
@@ -1426,46 +1396,12 @@
                       "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4879,
+                      "duration": 8675,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:43.939Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d318381359a9b96acb1e-44aa865bf5e0766b7f37",
-              "file": "home.spec.ts",
-              "line": 26,
-              "column": 5
-            },
-            {
-              "title": "debe manejar error de API correctamente",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "Mobile Chrome",
-                  "projectName": "Mobile Chrome",
-                  "results": [
-                    {
-                      "workerIndex": 16,
-                      "parallelIndex": 3,
-                      "status": "passed",
-                      "duration": 9034,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-10-03T12:11:43.972Z",
+                      "startTime": "2026-01-27T12:18:12.518Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1475,7 +1411,7 @@
               ],
               "id": "d318381359a9b96acb1e-b683a45176331e7b1e6d",
               "file": "home.spec.ts",
-              "line": 55,
+              "line": 59,
               "column": 5
             },
             {
@@ -1491,15 +1427,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 1,
+                      "workerIndex": 13,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 5405,
+                      "duration": 3553,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:45.106Z",
+                      "startTime": "2026-01-27T12:18:13.513Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1509,7 +1445,7 @@
               ],
               "id": "d318381359a9b96acb1e-b1d17bd4f830a1a0eae1",
               "file": "home.spec.ts",
-              "line": 72,
+              "line": 76,
               "column": 5
             },
             {
@@ -1528,12 +1464,12 @@
                       "workerIndex": 20,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4728,
+                      "duration": 4907,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:04.606Z",
+                      "startTime": "2026-01-27T12:18:29.836Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1543,7 +1479,7 @@
               ],
               "id": "d318381359a9b96acb1e-522651f23c11cc36757d",
               "file": "home.spec.ts",
-              "line": 11,
+              "line": 15,
               "column": 5
             },
             {
@@ -1559,15 +1495,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 18,
-                      "parallelIndex": 1,
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4326,
+                      "duration": 3919,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:06.119Z",
+                      "startTime": "2026-01-27T12:18:28.646Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1577,7 +1513,7 @@
               ],
               "id": "d318381359a9b96acb1e-a2f4eb328b3a77fdc115",
               "file": "home.spec.ts",
-              "line": 16,
+              "line": 20,
               "column": 5
             },
             {
@@ -1594,14 +1530,14 @@
                   "results": [
                     {
                       "workerIndex": 19,
-                      "parallelIndex": 0,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 5978,
+                      "duration": 5061,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:08.333Z",
+                      "startTime": "2026-01-27T12:18:28.851Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1611,7 +1547,7 @@
               ],
               "id": "d318381359a9b96acb1e-f708cc7c6342137ad322",
               "file": "home.spec.ts",
-              "line": 26,
+              "line": 30,
               "column": 5
             },
             {
@@ -1627,15 +1563,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 21,
-                      "parallelIndex": 3,
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 9250,
+                      "duration": 8930,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:09.193Z",
+                      "startTime": "2026-01-27T12:18:31.658Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1645,7 +1581,7 @@
               ],
               "id": "d318381359a9b96acb1e-7fb87497e3bfb2e1ed78",
               "file": "home.spec.ts",
-              "line": 55,
+              "line": 59,
               "column": 5
             },
             {
@@ -1661,15 +1597,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 20,
-                      "parallelIndex": 2,
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3827,
+                      "duration": 4209,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:09.474Z",
+                      "startTime": "2026-01-27T12:18:32.591Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1679,7 +1615,7 @@
               ],
               "id": "d318381359a9b96acb1e-9f75e0e2309047664d5e",
               "file": "home.spec.ts",
-              "line": 72,
+              "line": 76,
               "column": 5
             }
           ]
@@ -1687,7 +1623,7 @@
         {
           "title": "Home Page - Responsive",
           "file": "home.spec.ts",
-          "line": 78,
+          "line": 82,
           "column": 6,
           "specs": [
             {
@@ -1703,15 +1639,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4661,
+                      "duration": 3380,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:16.642Z",
+                      "startTime": "2026-01-27T12:16:57.557Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1721,7 +1657,7 @@
               ],
               "id": "d318381359a9b96acb1e-e98e1e0e1206261b21c1",
               "file": "home.spec.ts",
-              "line": 79,
+              "line": 88,
               "column": 5
             },
             {
@@ -1737,15 +1673,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4139,
+                      "duration": 2791,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:18.322Z",
+                      "startTime": "2026-01-27T12:16:58.149Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1755,7 +1691,7 @@
               ],
               "id": "d318381359a9b96acb1e-ff53c923e4902874e13a",
               "file": "home.spec.ts",
-              "line": 87,
+              "line": 96,
               "column": 5
             },
             {
@@ -1771,15 +1707,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 6,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 6037,
+                      "duration": 5182,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:53.619Z",
+                      "startTime": "2026-01-27T12:17:27.592Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1789,7 +1725,7 @@
               ],
               "id": "d318381359a9b96acb1e-d8b782cc2fc922647401",
               "file": "home.spec.ts",
-              "line": 79,
+              "line": 88,
               "column": 5
             },
             {
@@ -1805,15 +1741,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 8,
+                      "workerIndex": 7,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 6201,
+                      "duration": 5422,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:56.425Z",
+                      "startTime": "2026-01-27T12:17:31.662Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1823,45 +1759,11 @@
               ],
               "id": "d318381359a9b96acb1e-8d90dc6a17897147dcb2",
               "file": "home.spec.ts",
-              "line": 87,
+              "line": 96,
               "column": 5
             },
             {
               "title": "debe funcionar correctamente en mobile",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 3916,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-10-03T12:11:23.417Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "d318381359a9b96acb1e-04d596c0c54c48d5360a",
-              "file": "home.spec.ts",
-              "line": 79,
-              "column": 5
-            },
-            {
-              "title": "debe funcionar correctamente en tablet",
               "ok": true,
               "tags": [],
               "tests": [
@@ -1874,14 +1776,48 @@
                   "results": [
                     {
                       "workerIndex": 12,
-                      "parallelIndex": 2,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 4102,
+                      "duration": 3208,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:26.442Z",
+                      "startTime": "2026-01-27T12:17:55.369Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "d318381359a9b96acb1e-04d596c0c54c48d5360a",
+              "file": "home.spec.ts",
+              "line": 88,
+              "column": 5
+            },
+            {
+              "title": "debe funcionar correctamente en tablet",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "webkit",
+                  "projectName": "webkit",
+                  "results": [
+                    {
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 3501,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T12:17:56.422Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1891,7 +1827,7 @@
               ],
               "id": "d318381359a9b96acb1e-28de2c747dcba85d991c",
               "file": "home.spec.ts",
-              "line": 87,
+              "line": 96,
               "column": 5
             },
             {
@@ -1907,15 +1843,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 14,
-                      "parallelIndex": 2,
+                      "workerIndex": 16,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5548,
+                      "duration": 3507,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:48.565Z",
+                      "startTime": "2026-01-27T12:18:13.630Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1925,7 +1861,7 @@
               ],
               "id": "d318381359a9b96acb1e-ca00f7c47f9f93113b09",
               "file": "home.spec.ts",
-              "line": 79,
+              "line": 88,
               "column": 5
             },
             {
@@ -1941,15 +1877,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 15,
-                      "parallelIndex": 0,
+                      "workerIndex": 14,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 6379,
+                      "duration": 3316,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:48.852Z",
+                      "startTime": "2026-01-27T12:18:14.954Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1959,7 +1895,7 @@
               ],
               "id": "d318381359a9b96acb1e-14e0f85de9ce7a5afacb",
               "file": "home.spec.ts",
-              "line": 87,
+              "line": 96,
               "column": 5
             },
             {
@@ -1975,15 +1911,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 18,
-                      "parallelIndex": 1,
+                      "workerIndex": 19,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3678,
+                      "duration": 3112,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:10.473Z",
+                      "startTime": "2026-01-27T12:18:33.939Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -1993,7 +1929,7 @@
               ],
               "id": "d318381359a9b96acb1e-77f1dcdbbc10133a74ee",
               "file": "home.spec.ts",
-              "line": 79,
+              "line": 88,
               "column": 5
             },
             {
@@ -2012,12 +1948,12 @@
                       "workerIndex": 20,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4542,
+                      "duration": 4395,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:13.338Z",
+                      "startTime": "2026-01-27T12:18:34.867Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2027,7 +1963,7 @@
               ],
               "id": "d318381359a9b96acb1e-d9d96227e83e36522ada",
               "file": "home.spec.ts",
-              "line": 87,
+              "line": 96,
               "column": 5
             }
           ]
@@ -2044,7 +1980,7 @@
         {
           "title": "Product Detail Page",
           "file": "product.spec.ts",
-          "line": 5,
+          "line": 6,
           "column": 6,
           "specs": [
             {
@@ -2060,15 +1996,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2731,
+                      "duration": 2016,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:20.645Z",
+                      "startTime": "2026-01-27T12:17:00.180Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2078,45 +2014,11 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-2f32ed74efa5b1446a05",
               "file": "product.spec.ts",
-              "line": 12,
+              "line": 16,
               "column": 5
             },
             {
               "title": "debe agregar producto al carrito desde detalle",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 2580,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-10-03T12:10:21.340Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2fa8ab87beca8e7f39ce-ac91b43dcae6b5a6dd51",
-              "file": "product.spec.ts",
-              "line": 24,
-              "column": 5
-            },
-            {
-              "title": "debe navegar de vuelta a home",
               "ok": true,
               "tags": [],
               "tests": [
@@ -2131,12 +2033,12 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2118,
+                      "duration": 1839,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:22.489Z",
+                      "startTime": "2026-01-27T12:17:00.965Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2144,13 +2046,13 @@
                   "status": "expected"
                 }
               ],
-              "id": "2fa8ab87beca8e7f39ce-855d4aa2bb4553808a86",
+              "id": "2fa8ab87beca8e7f39ce-ac91b43dcae6b5a6dd51",
               "file": "product.spec.ts",
-              "line": 29,
+              "line": 28,
               "column": 5
             },
             {
-              "title": "debe manejar producto no encontrado",
+              "title": "debe navegar de vuelta a home",
               "ok": true,
               "tags": [],
               "tests": [
@@ -2165,12 +2067,46 @@
                       "workerIndex": 3,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 8602,
+                      "duration": 1821,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:23.397Z",
+                      "startTime": "2026-01-27T12:17:00.977Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2fa8ab87beca8e7f39ce-855d4aa2bb4553808a86",
+              "file": "product.spec.ts",
+              "line": 33,
+              "column": 5
+            },
+            {
+              "title": "debe manejar producto no encontrado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 9617,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T12:17:02.212Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2180,7 +2116,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-8c2a057e3a3298632a27",
               "file": "product.spec.ts",
-              "line": 36,
+              "line": 40,
               "column": 5
             },
             {
@@ -2196,15 +2132,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2148,
+                      "duration": 1935,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:23.754Z",
+                      "startTime": "2026-01-27T12:17:02.816Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2214,7 +2150,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-cdd51efd6a79a3ea4625",
               "file": "product.spec.ts",
-              "line": 53,
+              "line": 57,
               "column": 5
             },
             {
@@ -2230,15 +2166,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 3,
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5073,
+                      "duration": 4486,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:58.822Z",
+                      "startTime": "2026-01-27T12:17:32.308Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2248,7 +2184,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-15fe84c36e6f42b6f773",
               "file": "product.spec.ts",
-              "line": 12,
+              "line": 16,
               "column": 5
             },
             {
@@ -2264,15 +2200,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 6,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4677,
+                      "duration": 5262,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:59.750Z",
+                      "startTime": "2026-01-27T12:17:32.820Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2282,45 +2218,11 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-95b10bb4120dd6a67d29",
               "file": "product.spec.ts",
-              "line": 24,
+              "line": 28,
               "column": 5
             },
             {
               "title": "debe navegar de vuelta a home",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 9,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 4614,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-10-03T12:11:00.975Z",
-                      "annotations": [],
-                      "attachments": []
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "2fa8ab87beca8e7f39ce-729919eeec497e94b2c7",
-              "file": "product.spec.ts",
-              "line": 29,
-              "column": 5
-            },
-            {
-              "title": "debe manejar producto no encontrado",
               "ok": true,
               "tags": [],
               "tests": [
@@ -2333,14 +2235,48 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 1,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 10261,
+                      "duration": 5293,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:02.677Z",
+                      "startTime": "2026-01-27T12:17:32.959Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "2fa8ab87beca8e7f39ce-729919eeec497e94b2c7",
+              "file": "product.spec.ts",
+              "line": 33,
+              "column": 5
+            },
+            {
+              "title": "debe manejar producto no encontrado",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 30000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "firefox",
+                  "projectName": "firefox",
+                  "results": [
+                    {
+                      "workerIndex": 5,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 10590,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-27T12:17:36.828Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2350,7 +2286,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-9f930bf51bb3df74c38c",
               "file": "product.spec.ts",
-              "line": 36,
+              "line": 40,
               "column": 5
             },
             {
@@ -2367,14 +2303,14 @@
                   "results": [
                     {
                       "workerIndex": 7,
-                      "parallelIndex": 3,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5055,
+                      "duration": 4827,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:03.926Z",
+                      "startTime": "2026-01-27T12:17:37.137Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2384,7 +2320,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-923f2ee0269225cc5fa5",
               "file": "product.spec.ts",
-              "line": 53,
+              "line": 57,
               "column": 5
             },
             {
@@ -2400,15 +2336,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 13,
+                      "workerIndex": 10,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3269,
+                      "duration": 3043,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:27.386Z",
+                      "startTime": "2026-01-27T12:17:57.135Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2418,7 +2354,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-d6449bbf8aac017ec175",
               "file": "product.spec.ts",
-              "line": 12,
+              "line": 16,
               "column": 5
             },
             {
@@ -2434,15 +2370,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 3,
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3989,
+                      "duration": 4056,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:27.559Z",
+                      "startTime": "2026-01-27T12:17:58.621Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2452,7 +2388,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-d41c1b997cb02a65e706",
               "file": "product.spec.ts",
-              "line": 24,
+              "line": 28,
               "column": 5
             },
             {
@@ -2468,15 +2404,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 12,
+                      "workerIndex": 11,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3392,
+                      "duration": 2921,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:30.577Z",
+                      "startTime": "2026-01-27T12:17:59.975Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2486,7 +2422,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-c8a03d2d408b0f72f905",
               "file": "product.spec.ts",
-              "line": 29,
+              "line": 33,
               "column": 5
             },
             {
@@ -2502,15 +2438,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 13,
+                      "workerIndex": 10,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 8542,
+                      "duration": 9197,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:30.679Z",
+                      "startTime": "2026-01-27T12:18:00.204Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2520,7 +2456,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-f724e65ed1af800d87f1",
               "file": "product.spec.ts",
-              "line": 36,
+              "line": 40,
               "column": 5
             },
             {
@@ -2536,15 +2472,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 0,
+                      "workerIndex": 9,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2823,
+                      "duration": 2856,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:31.396Z",
+                      "startTime": "2026-01-27T12:18:01.105Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2554,7 +2490,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-f106ee3595eaf90b2568",
               "file": "product.spec.ts",
-              "line": 53,
+              "line": 57,
               "column": 5
             },
             {
@@ -2570,15 +2506,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 1,
+                      "workerIndex": 13,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3295,
+                      "duration": 2541,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:50.632Z",
+                      "startTime": "2026-01-27T12:18:17.126Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2588,7 +2524,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-4d52804bd05c4c9b745e",
               "file": "product.spec.ts",
-              "line": 12,
+              "line": 16,
               "column": 5
             },
             {
@@ -2605,14 +2541,14 @@
                   "results": [
                     {
                       "workerIndex": 16,
-                      "parallelIndex": 3,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3290,
+                      "duration": 2762,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:53.080Z",
+                      "startTime": "2026-01-27T12:18:17.205Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2622,7 +2558,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-118fbe4e430d3a03bc8b",
               "file": "product.spec.ts",
-              "line": 24,
+              "line": 28,
               "column": 5
             },
             {
@@ -2638,15 +2574,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 1,
+                      "workerIndex": 14,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 3106,
+                      "duration": 1824,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:53.958Z",
+                      "startTime": "2026-01-27T12:18:18.295Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2656,7 +2592,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-2f3364f6cc23e1ecef2c",
               "file": "product.spec.ts",
-              "line": 29,
+              "line": 33,
               "column": 5
             },
             {
@@ -2672,15 +2608,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 14,
+                      "workerIndex": 13,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 8714,
+                      "duration": 8442,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:54.174Z",
+                      "startTime": "2026-01-27T12:18:19.691Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2690,7 +2626,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-bcefbb0d30f845bf2fec",
               "file": "product.spec.ts",
-              "line": 36,
+              "line": 40,
               "column": 5
             },
             {
@@ -2706,15 +2642,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 15,
-                      "parallelIndex": 0,
+                      "workerIndex": 16,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 2243,
+                      "duration": 1851,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:55.267Z",
+                      "startTime": "2026-01-27T12:18:19.992Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2724,7 +2660,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-b025e4d7ed56a667fe0f",
               "file": "product.spec.ts",
-              "line": 53,
+              "line": 57,
               "column": 5
             },
             {
@@ -2740,15 +2676,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 18,
-                      "parallelIndex": 1,
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 3573,
+                      "duration": 2563,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:14.203Z",
+                      "startTime": "2026-01-27T12:18:36.847Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2758,7 +2694,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-dfb96c18577cc52c1a55",
               "file": "product.spec.ts",
-              "line": 12,
+              "line": 16,
               "column": 5
             },
             {
@@ -2775,14 +2711,14 @@
                   "results": [
                     {
                       "workerIndex": 19,
-                      "parallelIndex": 0,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 4275,
+                      "duration": 3146,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:14.372Z",
+                      "startTime": "2026-01-27T12:18:37.094Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2792,7 +2728,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-b2e4556a9f02cdc67feb",
               "file": "product.spec.ts",
-              "line": 24,
+              "line": 28,
               "column": 5
             },
             {
@@ -2808,15 +2744,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 18,
-                      "parallelIndex": 1,
+                      "workerIndex": 20,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 3558,
+                      "duration": 2997,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:17.807Z",
+                      "startTime": "2026-01-27T12:18:39.333Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2826,7 +2762,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-dfdf6e66f343491561a8",
               "file": "product.spec.ts",
-              "line": 29,
+              "line": 33,
               "column": 5
             },
             {
@@ -2842,15 +2778,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 20,
-                      "parallelIndex": 2,
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 8564,
+                      "duration": 8234,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:17.951Z",
+                      "startTime": "2026-01-27T12:18:39.433Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2860,7 +2796,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-f268a593d7fb6acbb182",
               "file": "product.spec.ts",
-              "line": 36,
+              "line": 40,
               "column": 5
             },
             {
@@ -2876,15 +2812,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 21,
+                      "workerIndex": 19,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 2940,
+                      "duration": 2100,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:18.505Z",
+                      "startTime": "2026-01-27T12:18:40.259Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2894,7 +2830,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-08caca1ab95f9fe424d3",
               "file": "product.spec.ts",
-              "line": 53,
+              "line": 57,
               "column": 5
             }
           ]
@@ -2902,7 +2838,7 @@
         {
           "title": "Product Detail - Navigation Flow",
           "file": "product.spec.ts",
-          "line": 59,
+          "line": 63,
           "column": 6,
           "specs": [
             {
@@ -2918,15 +2854,15 @@
                   "projectName": "chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 5706,
+                      "duration": 3934,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:10:23.939Z",
+                      "startTime": "2026-01-27T12:17:02.820Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2936,7 +2872,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-88f3e77c32aede18a66a",
               "file": "product.spec.ts",
-              "line": 60,
+              "line": 69,
               "column": 5
             },
             {
@@ -2952,15 +2888,15 @@
                   "projectName": "firefox",
                   "results": [
                     {
-                      "workerIndex": 4,
+                      "workerIndex": 6,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 6476,
+                      "duration": 7414,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:04.457Z",
+                      "startTime": "2026-01-27T12:17:38.107Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -2970,7 +2906,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-d6bcac16545a97553c0c",
               "file": "product.spec.ts",
-              "line": 60,
+              "line": 69,
               "column": 5
             },
             {
@@ -2986,15 +2922,15 @@
                   "projectName": "webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 3,
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5954,
+                      "duration": 5498,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:31.570Z",
+                      "startTime": "2026-01-27T12:18:02.694Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3004,7 +2940,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-c40a63d4018220e3fcbf",
               "file": "product.spec.ts",
-              "line": 60,
+              "line": 69,
               "column": 5
             },
             {
@@ -3020,15 +2956,15 @@
                   "projectName": "Mobile Chrome",
                   "results": [
                     {
-                      "workerIndex": 16,
+                      "workerIndex": 14,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 5701,
+                      "duration": 4048,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:11:56.395Z",
+                      "startTime": "2026-01-27T12:18:20.140Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3038,7 +2974,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-ee89f109babdb5f7b021",
               "file": "product.spec.ts",
-              "line": 60,
+              "line": 69,
               "column": 5
             },
             {
@@ -3054,15 +2990,15 @@
                   "projectName": "Mobile Safari",
                   "results": [
                     {
-                      "workerIndex": 19,
-                      "parallelIndex": 0,
+                      "workerIndex": 18,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5775,
+                      "duration": 5364,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-10-03T12:12:18.670Z",
+                      "startTime": "2026-01-27T12:18:40.640Z",
                       "annotations": [],
                       "attachments": []
                     }
@@ -3072,7 +3008,7 @@
               ],
               "id": "2fa8ab87beca8e7f39ce-35f02a899346575d10b8",
               "file": "product.spec.ts",
-              "line": 60,
+              "line": 69,
               "column": 5
             }
           ]
@@ -3082,11 +3018,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-10-03T12:10:03.293Z",
-    "duration": 143298.153,
-    "expected": 78,
+    "startTime": "2026-01-27T12:16:43.896Z",
+    "duration": 123831.706,
+    "expected": 79,
     "skipped": 0,
     "unexpected": 0,
-    "flaky": 2
+    "flaky": 1
   }
 }
