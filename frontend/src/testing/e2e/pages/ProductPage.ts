@@ -1,10 +1,8 @@
 import { Page, expect } from '@playwright/test';
 import { PageHelpers } from '../helpers/page-helpers';
-import { ApiHelpers } from '../helpers/api-helpers';
 
 export class ProductPage {
     private pageHelpers: PageHelpers;
-    private apiHelpers: ApiHelpers;
 
     private readonly selectors = {
         productTitle: 'main h1[data-testid="product-title"], main h1',
@@ -20,7 +18,6 @@ export class ProductPage {
 
     constructor(public page: Page) {
         this.pageHelpers = new PageHelpers(page);
-        this.apiHelpers = new ApiHelpers(page);
     }
 
     async navigateToProduct(slug: string, mockData?: {
